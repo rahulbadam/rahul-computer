@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Puter Technologies Inc.",
+  "author": "Rahul Badam (forked from Puter Technologies Inc.)",
   "license": "UNLICENSED",
   "dependencies": {
     "axios": "^1.12.0",

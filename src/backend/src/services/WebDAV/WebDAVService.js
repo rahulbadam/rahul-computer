@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -157,7 +157,7 @@ class WebDAVService extends BaseService {
                 const base64Credentials = authHeader.split(' ')[1];
                 const credentials = Buffer.from(base64Credentials,
                                 'base64').toString( 'ascii');
-                let [ username, ...password ] = credentials.split(':');
+                let [username, ...password] = credentials.split(':');
                 password = password.join(':');
 
                 // Call user's authentication function
@@ -238,7 +238,7 @@ class WebDAVService extends BaseService {
                 'UNLOCK',
                 'OPTIONS',
             ],
-            mw: [ configurable_auth({ optional: true }) ],
+            mw: [configurable_auth({ optional: true })],
             /**
              *
              * @param {import("express").Request} req

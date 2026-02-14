@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -39,13 +39,12 @@ class LLMkdir extends LLFilesystemOperation {
         const svc_fsLock = services.get('fslock');
         const svc_acl = services.get('acl');
 
-        /* eslint-disable */ // -- Please fix this linter rule
+        // -- Please fix this linter rule
         const lock_handle = await svc_fsLock.lock_child(
             await parent.get('path'),
             name,
             MODE_WRITE,
         );
-        /* eslint-enable */
 
         try {
             if ( ! await svc_acl.check(actor, parent, 'write') ) {

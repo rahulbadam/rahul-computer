@@ -36,7 +36,7 @@ Puter to zaawansowany, open-source'owy internetowy system operacyjny, zaprojekto
 ## 💻 Lokalne środowisko developerskie
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -109,7 +109,7 @@ Zawsze chętnie pomożemy Ci z wszelkimi pytaniami, jakie możesz mieć. Nie wah
 
 ## Licencja
 
-To repozytorium, w tym cała jego zawartość, podprojekty, moduły i komponenty, jest licencjonowane na podstawie [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt), chyba że wyraźnie zaznaczono inaczej. Biblioteki stron trzecich zawarte w tym repozytorium mogą podlegać własnym licencjom.
+To repozytorium, w tym cała jego zawartość, podprojekty, moduły i komponenty, jest licencjonowane na podstawie [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt), chyba że wyraźnie zaznaczono inaczej. Biblioteki stron trzecich zawarte w tym repozytorium mogą podlegać własnym licencjom.
 
 <br/>
 

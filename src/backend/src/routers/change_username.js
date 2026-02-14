@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -78,7 +78,7 @@ module.exports = eggspress('/change_username', {
                 mysql: '`created_at` > DATE_SUB(NOW(), INTERVAL 1 MONTH)',
                 sqlite: "`created_at` > datetime('now', '-1 month')",
             })}`,
-    [ req.user.id, 'change_username' ]);
+    [req.user.id, 'change_username']);
 
     if ( rows[0].count >= 2 ) {
         throw APIError.create('too_many_username_changes');

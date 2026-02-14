@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -103,7 +103,7 @@ class EntityStoreService extends BaseService {
                     es_params: options?.params ?? {},
                 }).arun(async () => {
                     const entities = await this.select(options);
-                    const promises = [];    
+                    const promises = [];
                     for ( const entity of entities ) {
                         promises.push(entity.get_client_safe());
                     }

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -615,7 +615,7 @@ class WebServerService extends BaseService {
             const is_site =
                 req.hostname.endsWith(config.static_hosting_domain) ||
                 (config.static_hosting_domain_alt && req.hostname.endsWith(config.static_hosting_domain_alt));
-            req.hostname === 'docs.puter.com'
+            req.hostname === 'github.com/rahulbadam/rahul-computer/blob/main/doc'
             ;
             const is_popup = !!req.query.embedded_in_popup;
             const is_parent_co = !!req.query.cross_origin_isolated;

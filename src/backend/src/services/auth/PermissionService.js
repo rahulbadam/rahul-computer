@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -1018,7 +1018,7 @@ class PermissionService extends BaseService {
     async list_user_permission_issuers (user) {
         const rows = await this.db.read('SELECT DISTINCT issuer_user_id FROM `user_to_user_permissions` ' +
             'WHERE `holder_user_id` = ?',
-        [ user.id ]);
+        [user.id]);
 
         const users = [];
         for ( const row of rows ) {
@@ -1201,7 +1201,7 @@ class PermissionService extends BaseService {
             {
                 id: 'grant-user-app',
                 handler: async (args, _log) => {
-                    const [ username, app_uid, permission, extra ] = args;
+                    const [username, app_uid, permission, extra] = args;
 
                     // actor from username
                     const actor = new Actor({
@@ -1216,7 +1216,7 @@ class PermissionService extends BaseService {
             {
                 id: 'scan',
                 handler: async (args, ctx) => {
-                    const [ username, permission ] = args;
+                    const [username, permission] = args;
 
                     // actor from username
                     const actor = new Actor({
@@ -1233,7 +1233,7 @@ class PermissionService extends BaseService {
             {
                 id: 'scan-app',
                 handler: async (args, ctx) => {
-                    const [ username, app_name, permission ] = args;
+                    const [username, app_name, permission] = args;
                     const app = await get_app({ name: app_name });
 
                     // actor from username

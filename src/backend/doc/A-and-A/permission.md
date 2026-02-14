@@ -152,7 +152,7 @@ Readings are described above.
 ## Permission Scan Sequence
 
 The `scan()` method of **PermissionService** invokes the permission scan sequence.
-The permission scan sequence is a [Sequence](https://github.com/HeyPuter/puter/blob/0e0bfd6d7c92eed5080518a099c9a66a2f2dc9ec/src/backend/src/codex/Sequence.js)
+The permission scan sequence is a [Sequence](https://github.com/rahulbadam/rahul-computer/blob/0e0bfd6d7c92eed5080518a099c9a66a2f2dc9ec/src/backend/src/codex/Sequence.js)
 that is defined in [scan-permission.js](src/backend/src/structured/sequence/scan-permission.js).
 It invokes many "permission scanners" which are defined in
 [permission-scanners.js](src/backend/src/unstructured/permission-scanners.js)

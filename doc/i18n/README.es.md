@@ -12,7 +12,7 @@
     ·
     <a href="https://developer.puter.com" target="_blank">Developers</a>
     ·
-    <a href="https://github.com/heyputer/puter-cli" target="_blank">CLI</a>
+    <a href="https://github.com/rahulbadam/rahul-computer-cli" target="_blank">CLI</a>
     ·
     <a href="https://discord.com/invite/PQcx7Teh8u">Discord</a>
     ·
@@ -43,7 +43,7 @@ Puter es un sistema operativo en internet avanzado y de código abierto, diseña
 ### 💻 Desarrollo Local
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -95,7 +95,7 @@ docker compose up
 
 ### 🚀 Auto-Hospedaje
 
-Para guías detalladas sobre cómo auto-hospedar Puter, incluyendo opciones de configuración y mejores prácticas, consulta nuestra [Documentación de Auto-Hospedaje](https://github.com/HeyPuter/puter/blob/main/doc/self-hosters/instructions.md).
+Para guías detalladas sobre cómo auto-hospedar Puter, incluyendo opciones de configuración y mejores prácticas, consulta nuestra [Documentación de Auto-Hospedaje](https://github.com/rahulbadam/rahul-computer/blob/main/doc/self-hosters/instructions.md).
 
 ### ☁️ Puter.com
 
@@ -117,7 +117,7 @@ Puter está disponible como servicio alojado en [**puter.com**](https://puter.co
 
 Conéctate con los mantenedores y la comunidad a través de estos canales:
 
-- Reporte de bug o solicitud de funcionalidad? Por favor [abrir un issue](https://github.com/HeyPuter/puter/issues/new/choose).
+- Reporte de bug o solicitud de funcionalidad? Por favor [abrir un issue](https://github.com/rahulbadam/rahul-computer/issues/new/choose).
 - Discord: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - X (Twitter): [x.com/HeyPuter](https://x.com/HeyPuter)
 - Reddit: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -132,40 +132,40 @@ Estamos siempre felices de ayudar con cualquier pregunta que puedas tener. No du
 
 ##  Licencia
 
-Este repositorio, incluyendo todo su contenido, sub-proyectos, modulos y componentes, esta licenciado bajo [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt) a menos que se indique explícitamente lo contrario. Librerías de terceros incluidos en este repositorio pueden estar sujetas a sus propias licencias.
+Este repositorio, incluyendo todo su contenido, sub-proyectos, modulos y componentes, esta licenciado bajo [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt) a menos que se indique explícitamente lo contrario. Librerías de terceros incluidos en este repositorio pueden estar sujetas a sus propias licencias.
 
 <br/>
 
 ## Traducciones
 
-- [Arabic / العربية](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.ar.md)
-- [Armenian / Հայերեն](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.hy.md)
-- [Bengali / বাংলা](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.bn.md)
-- [Chinese / 中文](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.zh.md)
-- [Danish / Dansk](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.da.md)
-- [English](https://github.com/HeyPuter/puter/blob/main/README.md)
-- [Farsi / فارسی](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.fa.md)
-- [Finnish / Suomi](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.fi.md)
-- [French / Français](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.fr.md)
-- [German/ Deutsch](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.de.md)
-- [Hebrew/ עברית](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.he.md)
-- [Hindi / हिंदी](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.hi.md)
-- [Hungarian / Magyar](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.hu.md)
-- [Indonesian / Bahasa Indonesia](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.id.md)
-- [Italian / Italiano](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.it.md)
-- [Japanese / 日本語](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.jp.md)
-- [Korean / 한국어](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.ko.md)
-- [Malayalam / മലയാളം](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.ml.md)
-- [Polish / Polski](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.pl.md)
-- [Portuguese / Português](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.pt.md)
-- [Romanian / Română](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.ro.md)
-- [Russian / Русский](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.ru.md)
-- [Spanish / Español](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.es.md)
-- [Swedish / Svenska](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.sv.md)
-- [Tamil / தமிழ்](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.ta.md)
-- [Telugu / తెలుగు](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.te.md)
-- [Thai / ไทย](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.th.md)
-- [Turkish / Türkçe](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.tr.md)
-- [Ukrainian / Українська](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.ua.md)
-- [Urdu / اردو](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.ur.md)
-- [Vietnamese / Tiếng Việt](https://github.com/HeyPuter/puter/blob/main/doc/i18n/README.vi.md)
+- [Arabic / العربية](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.ar.md)
+- [Armenian / Հայերեն](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.hy.md)
+- [Bengali / বাংলা](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.bn.md)
+- [Chinese / 中文](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.zh.md)
+- [Danish / Dansk](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.da.md)
+- [English](https://github.com/rahulbadam/rahul-computer/blob/main/README.md)
+- [Farsi / فارسی](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.fa.md)
+- [Finnish / Suomi](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.fi.md)
+- [French / Français](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.fr.md)
+- [German/ Deutsch](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.de.md)
+- [Hebrew/ עברית](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.he.md)
+- [Hindi / हिंदी](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.hi.md)
+- [Hungarian / Magyar](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.hu.md)
+- [Indonesian / Bahasa Indonesia](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.id.md)
+- [Italian / Italiano](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.it.md)
+- [Japanese / 日本語](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.jp.md)
+- [Korean / 한국어](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.ko.md)
+- [Malayalam / മലയാളം](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.ml.md)
+- [Polish / Polski](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.pl.md)
+- [Portuguese / Português](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.pt.md)
+- [Romanian / Română](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.ro.md)
+- [Russian / Русский](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.ru.md)
+- [Spanish / Español](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.es.md)
+- [Swedish / Svenska](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.sv.md)
+- [Tamil / தமிழ்](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.ta.md)
+- [Telugu / తెలుగు](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.te.md)
+- [Thai / ไทย](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.th.md)
+- [Turkish / Türkçe](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.tr.md)
+- [Ukrainian / Українська](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.ua.md)
+- [Urdu / اردو](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.ur.md)
+- [Vietnamese / Tiếng Việt](https://github.com/rahulbadam/rahul-computer/blob/main/doc/i18n/README.vi.md)

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -121,8 +121,8 @@ const error_help_details = [
                 'It looks like this might be our fault.',
             ];
             more.solutions = [
-                { title: 'Check for an issue on https://github.com/HeyPuter/puter/issues' },
-                { title: 'If there is no issue, please create one: https://github.com/HeyPuter/puter/issues/new' },
+                { title: 'Check for an issue on https://github.com/rahulbadam/rahul-computer/issues' },
+                { title: 'If there is no issue, please create one: https://github.com/rahulbadam/rahul-computer/issues/new' },
             ];
         },
     },
@@ -166,9 +166,9 @@ const print_error_help = (err, out = process.stdout) => {
     const wrap_list_title = s =>
         `\x1B[36;1m${s}:\x1B[0m`;
 
-    write(`${wrap_msg(err.message) }\n`);
+    write(`${wrap_msg(err.message)}\n`);
 
-    write = (s) => out.write(`\x1B[31;1m┃\x1B[0m ${ s}`);
+    write = (s) => out.write(`\x1B[31;1m┃\x1B[0m ${s}`);
 
     const vis = (stok, etok, str) => {
         return `\x1B[36;1m${stok}\x1B[0m${str}\x1B[36;1m${etok}\x1B[0m`;
@@ -194,7 +194,7 @@ const print_error_help = (err, out = process.stdout) => {
         any_help = true;
         write('The suggestions below may help resolve this issue.\n');
         write('\n');
-        write(`${wrap_list_title('Possible Solutions') }\n`);
+        write(`${wrap_list_title('Possible Solutions')}\n`);
         for ( const sol of err.more.solutions ) {
             write(`  - ${sol.title}\n`);
         }
@@ -206,7 +206,7 @@ const print_error_help = (err, out = process.stdout) => {
         any_help = true;
         write('The references below may be related to this issue.\n');
         write('\n');
-        write(`${wrap_list_title('References') }\n`);
+        write(`${wrap_list_title('References')}\n`);
         for ( const ref of err.more.references ) {
             write(`  - ${vis('[', ']', ref.subject)} ` +
                 `${vis('(', ')', ref.location)};\n`);

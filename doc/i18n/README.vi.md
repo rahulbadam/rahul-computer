@@ -40,7 +40,7 @@ Puter là một hệ điều hành internet tiên tiến, mã nguồn mở đư�
 
 ```bash
 Copy code
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -120,6 +120,6 @@ Chúng tôi luôn sẵn sàng giúp đỡ bạn với bất kỳ câu hỏi nào
 
 ## Giấy Phép
 
-Kho lưu trữ này, bao gồm tất cả nội dung, dự án con, mô-đun và thành phần của nó, được cấp phép theo [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt), trừ khi được tuyên bố rõ ràng khác. Các thư viện của bên thứ ba được bao gồm trong kho lưu trữ này có thể phải tuân theo các giấy phép riêng của chúng.
+Kho lưu trữ này, bao gồm tất cả nội dung, dự án con, mô-đun và thành phần của nó, được cấp phép theo [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt), trừ khi được tuyên bố rõ ràng khác. Các thư viện của bên thứ ba được bao gồm trong kho lưu trữ này có thể phải tuân theo các giấy phép riêng của chúng.
 
 <br/>

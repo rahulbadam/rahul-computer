@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -327,8 +327,8 @@ export class PuterHomepageService extends BaseService {
 
         <!-- Files from JSON (may be empty) -->
         ${((!bundled && manifest?.css_paths)
-                ? manifest.css_paths.map(path => `<link rel="stylesheet" href="${path}">\n`)
-                : []).join('')
+            ? manifest.css_paths.map(path => `<link rel="stylesheet" href="${path}">\n`)
+            : []).join('')
         }
         <!-- END Files from JSON -->
 

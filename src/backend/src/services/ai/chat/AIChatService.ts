@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -111,7 +111,7 @@ export class AIChatService extends BaseService {
         const models = this.#modelIdMap[modelId];
 
         if ( ! models ) {
-            throw new Error('Model not found, please try one of the following models listed here: https://developer.puter.com/ai/models/');
+            throw new Error('Model not found, please try one of the following models listed here: https://github.com/rahulbadam/rahul-computer/ai/models/');
         }
         if ( ! provider ) {
             return models[0];

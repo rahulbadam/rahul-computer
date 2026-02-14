@@ -6,7 +6,7 @@ We feel this makes it easier for new contributors to develop Puter since you don
 need to figure out how to tie the parts together or how to work with Git submodules.
 It also makes it easier for us to maintain project-wide conventions and tooling.
 
-Some tools, like [puter-cli](https://github.com/HeyPuter/puter-cli), exist in separate
+Some tools, like [puter-cli](https://github.com/rahulbadam/rahul-computer-cli), exist in separate
 repositories. The `puter-cli` tool is used externally and can communicate with Puter's
 API on our production (puter.com) instance or your own instance of Puter, so there's
 not really any advantage to putting it in the monorepo.

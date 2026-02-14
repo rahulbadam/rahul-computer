@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -26,18 +26,18 @@ export default {
         return `
             <div class="about-container">
                 <div class="about">
-                    <a href="https://puter.com" target="_blank" class="logo"><img src="/images/logo.png"></a>
+                    <a href="https://rahulbadam.github.io" target="_blank" class="logo"><img src="/images/logo.png"></a>
                     <p class="description">${i18n('puter_description')}</p>
                     <p class="links">
                         <a href="mailto:hey@puter.com" target="_blank">hey@puter.com</a>
                         <span style="color: #CCC;">•</span>
-                        <a href="https://docs.puter.com" target="_blank">${i18n('developers')}</a>
+                        <a href="https://github.com/rahulbadam/rahul-computer/blob/main/doc" target="_blank">${i18n('developers')}</a>
                         <span style="color: #CCC;">•</span>
                         <a href="https://status.puter.com" target="_blank">${i18n('status')}</a>
                         <span style="color: #CCC;">•</span>
-                        <a href="https://puter.com/terms" target="_blank">${i18n('terms')}</a>
+                        <a href="https://rahulbadam.github.io/terms" target="_blank">${i18n('terms')}</a>
                         <span style="color: #CCC;">•</span>
-                        <a href="https://puter.com/privacy" target="_blank">${i18n('privacy')}</a>
+                        <a href="https://rahulbadam.github.io/privacy" target="_blank">${i18n('privacy')}</a>
                         <span style="color: #CCC;">•</span>
                         <a href="#" class="show-credits">${i18n('credits')}</a>
                     </p>

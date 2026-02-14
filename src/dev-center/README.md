@@ -28,7 +28,7 @@
 
 ## Dev Center
 
-Dev Center is a Puter app that allows you to publish and manage web apps. It is built with Puter SDK and is available on [Puter.com](https://puter.com/app/dev-center) as well as [the self-hosted Puter](https://github.com/heyPuter/puter/).
+Dev Center is a Puter app that allows you to publish and manage web apps. It is built with Puter SDK and is available on [Puter.com](https://puter.com/app/dev-center) as well as [the self-hosted Puter](https://github.com/rahulbadam/rahul-computer/).
 
 <br>
 

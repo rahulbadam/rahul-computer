@@ -154,7 +154,7 @@ class EmailConfirmationDialog extends (globalThis.HTMLElement || Object) {
         });
 
         this.shadowRoot.querySelector('#confirm-email-btn').addEventListener('click', () => {
-            window.open('https://puter.com', '_blank');
+            window.open('https://rahulbadam.github.io', '_blank');
             this.close();
         });
 

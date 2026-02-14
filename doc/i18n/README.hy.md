@@ -42,7 +42,7 @@ Puter-ը առաջադեմ, բաց կոդով ինտերնետային օպերա
 ### 💻 Լոկալ ծրագրավորում
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -107,7 +107,7 @@ Puter-ը հասանելի է որպես հյուրընկալվող ծառայո�
 
 Կապվեք համակարգողների և համայնքի հետ այս կայքերի միջոցով՝
 
-- Սխալների կամ գործառույթի հարցում՝ (https://github.com/HeyPuter/puter/issues/new/choose).
+- Սխալների կամ գործառույթի հարցում՝ (https://github.com/rahulbadam/rahul-computer/issues/new/choose).
 - Discord: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - X (Twitter): [x.com/HeyPuter](https://x.com/HeyPuter)
 - Reddit: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -122,6 +122,6 @@ Puter-ը հասանելի է որպես հյուրընկալվող ծառայո�
 
 ##  Լիցենզիա
 
-Այս պահոցարանը, ներառյալ բոլոր իր բովանդակությունը, ենթա-պրոյեկտները, մոդուլները և բաղադրիչները, լիցենզավորվում են [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt) լիցենզիայի տակ, եթե այլ կերպ հստակ նշված չէ։ Այս պահոցարանում ներառված երրորդ կողմի գրադարանները կարող են ենթարկվել իրենց սեփական լիցենզիաներին։
+Այս պահոցարանը, ներառյալ բոլոր իր բովանդակությունը, ենթա-պրոյեկտները, մոդուլները և բաղադրիչները, լիցենզավորվում են [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt) լիցենզիայի տակ, եթե այլ կերպ հստակ նշված չէ։ Այս պահոցարանում ներառված երրորդ կողմի գրադարանները կարող են ենթարկվել իրենց սեփական լիցենզիաներին։
 
 <br/>

@@ -1,18 +1,18 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
- * 
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
+ *
  * This file is part of Puter.
- * 
+ *
  * Puter is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Affero General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
@@ -104,7 +104,7 @@ Metaphysical hiccups causing temporary glitches in the fabric of reason
 Square circles plotting a revolution against euclidean geometry
 The letter Q eloped with an ampersand and they had punctuation mark babies`,
         tokens: 284,
-    }
+    },
 ];
 
 // Measure each with tiktoken
@@ -152,13 +152,13 @@ const counters_to_try = [
 const scores = {};
 
 const results = [];
-for (const example of claude_examples) {
+for ( const example of claude_examples ) {
     const result = {
         example,
         counts: {},
         diffs: {},
     };
-    for (const counter of counters_to_try) {
+    for ( const counter of counters_to_try ) {
         result.counts[counter.title] = counter.count(example.text);
     }
     results.push(result);
@@ -178,7 +178,6 @@ for (const example of claude_examples) {
 
     scores[most_accurate] = (scores[most_accurate] || 0) + 1;
 }
-
 
 console.log(results);
 

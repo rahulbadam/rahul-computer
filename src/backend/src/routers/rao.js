@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -117,11 +117,11 @@ router.post('/rao', configurable_auth(), express.json(), async (req, res, next) 
     else {
         db.read('SELECT DISTINCT app_uid FROM app_opens WHERE user_id = ? GROUP BY app_uid ORDER BY MAX(_id) DESC LIMIT 10',
                         [req.user.id]).then( ([apps]) => {
-            // Update cache with the results from the db (if any results were returned)
-            if ( apps && Array.isArray(apps) && apps.length > 0 ) {
+                            // Update cache with the results from the db (if any results were returned)
+                            if ( apps && Array.isArray(apps) && apps.length > 0 ) {
                 redisClient.set(`app_opens:user:${ req.user.id}`, JSON.stringify(apps));
-            }
-        });
+                            }
+                        });
     }
 
     // Update clients

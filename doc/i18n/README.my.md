@@ -42,7 +42,7 @@ Puter ialah sistem operasi internet sumber terbuka yang maju dan direka untuk ka
 ### 💻 Pembangunan Lokal
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -107,7 +107,7 @@ Puter tersedia sebagai perkhidmatan terhos di [**puter.com**](https://puter.com)
 
 Berhubung dengan penyelenggara dan komuniti melalui saluran berikut:
 
-- Laporan pepijat atau permintaan ciri? Sila [buka isu baharu](https://github.com/HeyPuter/puter/issues/new/choose).
+- Laporan pepijat atau permintaan ciri? Sila [buka isu baharu](https://github.com/rahulbadam/rahul-computer/issues/new/choose).
 - Discord: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - X (Twitter): [x.com/HeyPuter](https://x.com/HeyPuter)
 - Reddit: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -122,6 +122,6 @@ Kami sentiasa gembira untuk membantu anda dengan apa-apa soalan. Jangan takut un
 
 ## Lesen
 
-Repositori ini, termasuklah kandungannya, subprojek, modul dan komponen, dilesenkan di bawah [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt) melainkan dinyatakan sebaliknya. *Library* pihak ketiga yang terkandung dalam repositori ini tertakluk kepada lesen mereka sendiri.
+Repositori ini, termasuklah kandungannya, subprojek, modul dan komponen, dilesenkan di bawah [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt) melainkan dinyatakan sebaliknya. *Library* pihak ketiga yang terkandung dalam repositori ini tertakluk kepada lesen mereka sendiri.
 <!-- The word `Library` is kept as is to avoid confusion since the direct translation `Perpustakaan/Pustaka` is never used in the tech context and doesn't convey the same meaning among Malay community if used in this situation -->
 <br/>

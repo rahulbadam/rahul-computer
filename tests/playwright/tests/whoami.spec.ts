@@ -42,7 +42,7 @@ test('connect to prod puter', async ({ page }) => {
     page.on('pageerror', (err) => console.error('[pageerror]', err));
     page.on('console', (msg) => console.log('[browser]', msg.text()));
 
-    const prodURL = 'https://puter.com';
+    const prodURL = 'https://rahulbadam.github.io';
 
     // Go to production URL
     await page.goto(prodURL);

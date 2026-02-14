@@ -42,7 +42,7 @@ Puter er et avanceret, open-source internetoperativsystem designet til at være 
 ### 💻 Lokal Udvikling
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -107,7 +107,7 @@ Puter er tilgængelig som en hosted tjeneste på [**puter.com**](https://puter.c
 
 Kom i kontakt med vedligeholderne og fællesskabet gennem disse kanaler:
 
-- Bugrapport eller funktionønske? Åbn [venligst en sag](https://github.com/HeyPuter/puter/issues/new/choose).
+- Bugrapport eller funktionønske? Åbn [venligst en sag](https://github.com/rahulbadam/rahul-computer/issues/new/choose).
 - Discord: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - X (Twitter): [x.com/HeyPuter](https://x.com/HeyPuter)
 - Reddit: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -122,6 +122,6 @@ Vi er altid glade for at hjælpe dig med eventuelle spørgsmål, du måtte have.
 
 ## Licens
 
-Dette repository, inklusive alt dets indhold, underprojekter, moduler og komponenter, er licenseret under [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt), medmindre andet er udtrykkeligt angivet. Tredjepartsbiblioteker inkluderet i dette repository kan være underlagt deres egne licenser.
+Dette repository, inklusive alt dets indhold, underprojekter, moduler og komponenter, er licenseret under [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt), medmindre andet er udtrykkeligt angivet. Tredjepartsbiblioteker inkluderet i dette repository kan være underlagt deres egne licenser.
 
 <br/>

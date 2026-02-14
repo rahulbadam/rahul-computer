@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -138,7 +138,7 @@ class MkTree extends HLFilesystemOperation {
         // until it finds the first directory that doesn't exist yet.
         let i = 0;
         if ( parent_exists ) {
-            for ( ; i < dirs.length ; i++ ) {
+            for ( ; i < dirs.length; i++ ) {
                 const dir = dirs[i];
                 const currentParent = current;
                 current = new NodeChildSelector(current, dir);
@@ -180,7 +180,7 @@ class MkTree extends HLFilesystemOperation {
         // In this way it goes nyyyoooom because all the database inserts
         // happen concurrently (and probably end up in the same batch).
 
-        for ( ; i < dirs.length ; i++ ) {
+        for ( ; i < dirs.length; i++ ) {
             const dir = dirs[i];
             const currentParent = current;
             current = new NodeChildSelector(current, dir);
@@ -236,7 +236,7 @@ class QuickMkdir extends HLFilesystemOperation {
             currentSpan.setAttribute('parent', parent.selector.describe());
         }
 
-        for ( let i = 0 ; i < dirs.length ; i++ ) {
+        for ( let i = 0; i < dirs.length; i++ ) {
             const dir = dirs[i];
             const currentParent = current;
             current = new NodeChildSelector(current, dir);
@@ -329,7 +329,7 @@ class HLMkdir extends HLFilesystemOperation {
             : await this._get_existing_top_parent({ top_parent: parent_node })
             ;
 
-        // TODO: this can be removed upon completion of: https://github.com/HeyPuter/puter/issues/1352
+        // TODO: this can be removed upon completion of: https://github.com/rahulbadam/rahul-computer/issues/1352
         if ( top_parent.isRoot ) {
             // root directory is read-only
             throw APIError.create('forbidden', null, {
@@ -369,7 +369,7 @@ class HLMkdir extends HLFilesystemOperation {
             else if ( dedupe_name ) {
                 const fs = context.get('services').get('filesystem');
                 const parent_selector = parent_node.selector;
-                for ( let i = 1 ;; i++ ) {
+                for ( let i = 1; ; i++ ) {
                     let try_new_name = `${target_basename} (${i})`;
                     const selector = new NodeChildSelector(parent_selector, try_new_name);
                     const exists = await parent_node.provider.quick_check({
@@ -475,10 +475,10 @@ class HLMkdir extends HLFilesystemOperation {
 
         // Determine the deepest existing node
         let deepest_existing = parent_node;
-        let remaining_path  = _path.dirname(values.path).split('/').filter(Boolean);
+        let remaining_path = _path.dirname(values.path).split('/').filter(Boolean);
         {
             const parts = remaining_path.slice();
-            for ( ;; ) {
+            for ( ; ; ) {
                 if ( remaining_path.length === 0 ) {
                     return deepest_existing;
                 }

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -469,12 +469,12 @@ class AuthService extends BaseService {
         } else {
             token_uid = tokenOrUuid;
         }
-        /* eslint-disable */
+
         await this.db.write(
             'DELETE FROM `access_token_permissions` WHERE `token_uid` = ?',
             [token_uid],
         );
-        /* eslint-enable */
+
         const svc_permission = this.services.get('permission');
         svc_permission.invalidate_permission_scan_cache_for_access_token(token_uid);
     }

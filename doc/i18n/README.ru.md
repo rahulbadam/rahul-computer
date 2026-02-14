@@ -42,7 +42,7 @@ Puter — это передовая операционная система с �
 ### 💻 Локальная разработка
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -107,7 +107,7 @@ Puter доступен как облачный сервис на [**puter.com**]
 
 Свяжитесь с разработчиками и сообществом этими способами:
 
-- Отчет об ошибке или запрос функции? Пожалуйста, [откройте вопрос](https://github.com/HeyPuter/puter/issues/new/choose).
+- Отчет об ошибке или запрос функции? Пожалуйста, [откройте вопрос](https://github.com/rahulbadam/rahul-computer/issues/new/choose).
 - Discord: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - X (Twitter): [x.com/HeyPuter](https://x.com/HeyPuter)
 - Reddit: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -122,6 +122,6 @@ Puter доступен как облачный сервис на [**puter.com**]
 
 ## Лицензия
 
-Этот репозиторий, включая все его содержимое, подпроекты, модули и компоненты, лицензирован в соответствии с [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt), если явно не указано иное. Сторонние библиотеки, включенные в этот репозиторий, могут подпадать под действие их собственных лицензий.
+Этот репозиторий, включая все его содержимое, подпроекты, модули и компоненты, лицензирован в соответствии с [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt), если явно не указано иное. Сторонние библиотеки, включенные в этот репозиторий, могут подпадать под действие их собственных лицензий.
 
 <br/>

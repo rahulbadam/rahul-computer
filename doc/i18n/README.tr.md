@@ -42,7 +42,7 @@ Puter, zengin özelliklere sahip, son derece hızlı ve son derece genişletileb
 ### 💻 Yerel Geliştirme
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -107,7 +107,7 @@ Puter, [**puter.com**](https://puter.com) adresinde barındırılan bir hizmet o
 
 Bakımcılarla ve toplulukla şu kanallar aracılığıyla iletişim kurabilirsiniz:
 
-- Hata raporu veya özellik isteği? Lütfen [yeni bir issue açın](https://github.com/HeyPuter/puter/issues/new/choose).
+- Hata raporu veya özellik isteği? Lütfen [yeni bir issue açın](https://github.com/rahulbadam/rahul-computer/issues/new/choose).
 - Discord: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - X (Twitter): [x.com/HeyPuter](https://x.com/HeyPuter)
 - Reddit: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -122,6 +122,6 @@ Sorularınız varsa size her zaman yardımcı olmaktan mutluluk duyarız. Sormak
 
 ##  Lisans
 
-Bu depo, tüm içeriği, alt projeleri, modülleri ve bileşenleri dahil olmak üzere, aksi açıkça belirtilmedikçe [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt) altında lisanslanmıştır. Bu depoda yer alan üçüncü taraf kütüphaneler kendi lisanslarına tabi olabilir.
+Bu depo, tüm içeriği, alt projeleri, modülleri ve bileşenleri dahil olmak üzere, aksi açıkça belirtilmedikçe [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt) altında lisanslanmıştır. Bu depoda yer alan üçüncü taraf kütüphaneler kendi lisanslarına tabi olabilir.
 
 <br/>

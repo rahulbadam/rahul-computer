@@ -83,7 +83,7 @@ Puter.js brings free, serverless, Cloud and AI directly to your frontend JavaScr
 
 Additionally, with Puter.js, you as the developer pay nothing since each user of your app [covers their own Cloud and AI usage](/user-pays-model/). Whether your app has 1 user or 1 million users, it costs you zero to run. Puter.js gives you infinitely scalable infrastructure, completely free.
 
-Puter.js is powered by [Puter](https://github.com/HeyPuter/puter), the open-source cloud operating system with a heavy focus on privacy. Puter does not use tracking technologies and does not monetize or even collect personal information.
+Puter.js is powered by [Puter](https://github.com/rahulbadam/rahul-computer), the open-source cloud operating system with a heavy focus on privacy. Puter does not use tracking technologies and does not monetize or even collect personal information.
 
 ## Examples
 

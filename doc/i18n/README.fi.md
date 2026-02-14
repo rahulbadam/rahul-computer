@@ -41,7 +41,7 @@ Puter on kehittynyt, avoimen lähdekoodin internetin käyttöjärjestelmä, joka
 ### 💻 Paikallinen kehitys
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -106,7 +106,7 @@ Puter on saatavilla isännöitynä palveluna osoitteessa [**puter.com**](https:/
 
 Ota yhteyttä ylläpitäjiin ja yhteisöön näiden kanavien kautta:
 
-- Onko sinulla virheraportti tai ominaisuuspyyntö? Ole hyvä ja [avaa uusi issue](https://github.com/HeyPuter/puter/issues/new/choose).
+- Onko sinulla virheraportti tai ominaisuuspyyntö? Ole hyvä ja [avaa uusi issue](https://github.com/rahulbadam/rahul-computer/issues/new/choose).
 - Discord: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - X (Twitter): [x.com/HeyPuter](https://x.com/HeyPuter)
 - Reddit: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -121,6 +121,6 @@ Olemme aina valmiita auttamaan sinua kaikissa kysymyksissäsi. Älä epäröi ky
 
 ##  Lisenssi
 
-Tämä repository, mukaan lukien kaikki sen sisältö, aliprojektit, moduulit ja komponentit, on lisensoitu [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt)-lisenssillä, ellei toisin mainita. Tämän repositoryn mukana tulevat kolmannen osapuolen kirjastot voivat olla omien lisenssiensä alaisia.
+Tämä repository, mukaan lukien kaikki sen sisältö, aliprojektit, moduulit ja komponentit, on lisensoitu [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt)-lisenssillä, ellei toisin mainita. Tämän repositoryn mukana tulevat kolmannen osapuolen kirjastot voivat olla omien lisenssiensä alaisia.
 
 <br/>

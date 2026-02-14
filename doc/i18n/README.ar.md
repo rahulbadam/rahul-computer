@@ -45,7 +45,7 @@
 ### 💻 التطوير المحلي
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -109,7 +109,7 @@ docker compose up
 
 تواصل مع المشرفين والمجتمع من خلال هذه القنوات:
 
-- تقرير عن خطأ أو طلب ميزة؟ الرجاء [فتح مشكلة](https://github.com/HeyPuter/puter/issues/new/choose)
+- تقرير عن خطأ أو طلب ميزة؟ الرجاء [فتح مشكلة](https://github.com/rahulbadam/rahul-computer/issues/new/choose)
 
 - دسكورد: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - إكس (تويتر): [x.com/HeyPuter](https://x.com/HeyPuter)
@@ -124,6 +124,6 @@ docker compose up
 
 ## الترخيص
 
-هذا المستودع، بما في ذلك جميع محتوياته ومشاريعه الفرعية ووحداته ومكوناته، مرخص تحت [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt) ما لم ينص على خلاف ذلك صراحةً. قد تخضع المكتبات الخارجية المدرجة في هذا المستودع لتراخيصها الخاصة.
+هذا المستودع، بما في ذلك جميع محتوياته ومشاريعه الفرعية ووحداته ومكوناته، مرخص تحت [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt) ما لم ينص على خلاف ذلك صراحةً. قد تخضع المكتبات الخارجية المدرجة في هذا المستودع لتراخيصها الخاصة.
 
 <br/>

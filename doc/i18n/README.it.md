@@ -42,7 +42,7 @@ Puter è un sistema operativo di Internet avanzato e open-source, progettato per
 ### 💻 Local Development
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -107,7 +107,7 @@ Puter è disponibile come servizio in hosting su [**puter.com**](https://puter.c
 
 Collegatevi con i maintainers e la comunità attraverso questi canali:
 
-- Segnalazione di bug o richiesta di funzionalità? Perfavore [aprire una issue](https://github.com/HeyPuter/puter/issues/new/choose).
+- Segnalazione di bug o richiesta di funzionalità? Perfavore [aprire una issue](https://github.com/rahulbadam/rahul-computer/issues/new/choose).
 - Discord: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - X (Twitter): [x.com/HeyPuter](https://x.com/HeyPuter)
 - Reddit: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -122,7 +122,7 @@ Siamo sempre felici di aiutarvi con qualsiasi domanda. Non esitate a chiedere!
 
 ##  Licenza
 
-Questo repository, compresi tutti i suoi contenuti, sottoprogetti, moduli e componenti, è concesso in licenza [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt), a meno che non sia esplicitamente indicato diversamente. Le librerie di terze parti incluse in questo repository possono essere soggette alle loro licenze.
+Questo repository, compresi tutti i suoi contenuti, sottoprogetti, moduli e componenti, è concesso in licenza [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt), a meno che non sia esplicitamente indicato diversamente. Le librerie di terze parti incluse in questo repository possono essere soggette alle loro licenze.
 
 <br/>
 

@@ -42,7 +42,7 @@
 ### 💻 ലോക്കൽ ഡെവലപ്മെന്റ്
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -108,7 +108,7 @@ docker compose up
 
 ഈ ചാനലുകളിലൂടെ പരിപാലിക്കുന്നവരുമായും കമ്മ്യൂണിറ്റിയുമായും ബന്ധപ്പെടുക:
 
-- ബഗ്ഗ് റിപ്പോർട്ടോ, ഫീച്ചർ റിക്ക്വസ്റ്റോ ഉണ്ടോ? ദയവുചെയ്ത് [ഒരു ഇഷ്യൂ തുടങ്ങുക](https://github.com/HeyPuter/puter/issues/new/choose).
+- ബഗ്ഗ് റിപ്പോർട്ടോ, ഫീച്ചർ റിക്ക്വസ്റ്റോ ഉണ്ടോ? ദയവുചെയ്ത് [ഒരു ഇഷ്യൂ തുടങ്ങുക](https://github.com/rahulbadam/rahul-computer/issues/new/choose).
 - ഡിസ്കോർഡ്: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - എക്സ് (ട്വിറ്റർ): [x.com/HeyPuter](https://x.com/HeyPuter)
 - റെഡ്ഡിറ്റ്: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -123,6 +123,6 @@ docker compose up
 
 ##  ലൈസൻസ്
 
-ഈ ശേഖരം, അതിന്റെ എല്ലാ ഉള്ളടക്കങ്ങളും, ഉപപദ്ധതികളും, മൊഡ്യൂളുകളും, ഘടകങ്ങളും ഉൾപ്പെടെ, [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt) എന്നതിന് കീഴിൽ ലൈസൻസുള്ളതാണ്. ഈ ശേഖരത്തിൽ ഉൾപ്പെടുത്തിയിരിക്കുന്ന മൂന്നാം കക്ഷി ലൈബ്രറികൾ അവരുടെ സ്വന്തം ലൈസൻസുകൾക്ക് വിധേയമായിരിക്കാം.
+ഈ ശേഖരം, അതിന്റെ എല്ലാ ഉള്ളടക്കങ്ങളും, ഉപപദ്ധതികളും, മൊഡ്യൂളുകളും, ഘടകങ്ങളും ഉൾപ്പെടെ, [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt) എന്നതിന് കീഴിൽ ലൈസൻസുള്ളതാണ്. ഈ ശേഖരത്തിൽ ഉൾപ്പെടുത്തിയിരിക്കുന്ന മൂന്നാം കക്ഷി ലൈബ്രറികൾ അവരുടെ സ്വന്തം ലൈസൻസുകൾക്ക് വിധേയമായിരിക്കാം.
 
 <br/>

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -77,7 +77,7 @@ module.exports = eggspress('/copy', {
 
         span.end();
         frame.done();
-        return res.send([ response ]);
+        return res.send([response]);
     });
 
     // res.send(new_fsentries)

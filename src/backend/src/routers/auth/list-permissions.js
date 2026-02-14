@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -45,7 +45,7 @@ export default eggspress('/auth/list-permissions', {
         permissions.myself_to_app = [];
 
         const rows = await db.read('SELECT * FROM `user_to_app_permissions` WHERE user_id=?',
-                        [ actor.type.user.id ]);
+                        [actor.type.user.id]);
         const apps = await get_apps(rows.map(row => ({ id: row.app_id })));
 
         for ( let i = 0; i < rows.length; i++ ) {
@@ -72,7 +72,7 @@ export default eggspress('/auth/list-permissions', {
         permissions.myself_to_user = [];
 
         const rows = await db.read('SELECT * FROM `user_to_user_permissions` WHERE issuer_user_id=?',
-                        [ actor.type.user.id ]);
+                        [actor.type.user.id]);
 
         for ( const row of rows ) {
             const user = await get_user({ id: row.holder_user_id });
@@ -90,7 +90,7 @@ export default eggspress('/auth/list-permissions', {
         permissions.user_to_myself = [];
 
         const rows = await db.read('SELECT * FROM `user_to_user_permissions` WHERE holder_user_id=?',
-                        [ actor.type.user.id ]);
+                        [actor.type.user.id]);
 
         for ( const row of rows ) {
             const user = await get_user({ id: row.issuer_user_id });

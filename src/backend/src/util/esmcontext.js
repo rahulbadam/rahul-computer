@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2026-present Puter Technologies Inc.
+ * Copyright (C) 2026-present Rahul Badam
  *
  * This file is part of Puter.
  *

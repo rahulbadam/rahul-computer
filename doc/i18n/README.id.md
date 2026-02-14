@@ -42,7 +42,7 @@ Puter adalah sistem operasi internet canggih, open-source, yang dirancang untuk 
 ### 💻 Pengembangan Lokal
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -107,7 +107,7 @@ Puter tersedia sebagai layanan yang telah dihosting di [**puter.com**](https://p
 
 Terhubung dengan maintainer dan komunitas melalui saluran-saluran berikut:
 
-- Laporan bug atau permintaan fitur? Silakan [buat issue](https://github.com/HeyPuter/puter/issues/new/choose).
+- Laporan bug atau permintaan fitur? Silakan [buat issue](https://github.com/rahulbadam/rahul-computer/issues/new/choose).
 - Discord: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - X (Twitter): [x.com/HeyPuter](https://x.com/HeyPuter)
 - Reddit: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -122,6 +122,6 @@ Kami selalu senang membantu Anda dengan pertanyaan apa pun yang Anda miliki. Jan
 
 ##  Lisensi
 
-Repositori ini, termasuk semua isinya, sub-proyek, modul, dan komponen, dilisensikan di bawah [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt) kecuali dinyatakan sebaliknya secara eksplisit. Perpustakaan pihak ketiga yang termasuk dalam repositori ini mungkin tunduk pada lisensinya sendiri.
+Repositori ini, termasuk semua isinya, sub-proyek, modul, dan komponen, dilisensikan di bawah [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt) kecuali dinyatakan sebaliknya secara eksplisit. Perpustakaan pihak ketiga yang termasuk dalam repositori ini mungkin tunduk pada lisensinya sendiri.
 
 <br/>

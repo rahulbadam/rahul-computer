@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -511,7 +511,7 @@ class APIError {
         'email_must_be_confirmed': {
             status: 422,
             message: ({ action }) =>
-                `Email must be confirmed to ${action ?? 'apply a share'}. Go to https://puter.com to confirm your email address.`,
+                `Email must be confirmed to ${action ?? 'apply a share'}. Go to https://rahulbadam.github.io to confirm your email address.`,
         },
         'no_need_to_request': {
             status: 422,

@@ -45,7 +45,7 @@ Puter este un sistem de operare pe internet, avansat, open-source, conceput să 
 ### 💻 Dezvoltare locală
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -109,7 +109,7 @@ Puter este disponibil ca serviciu găzduit la adresa [**puter.com**](https://put
 
 Ia legătura cu cei care asigură mentenanța proiectului și cu comunitatea prin aceste canale:
 
-* Vrei să raportezi un bug sau să ceri o funcționalitate? Te rugăm să [deschizi o problemă](https://github.com/HeyPuter/puter/issues/new/choose).
+* Vrei să raportezi un bug sau să ceri o funcționalitate? Te rugăm să [deschizi o problemă](https://github.com/rahulbadam/rahul-computer/issues/new/choose).
 * Discord: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 * X (Twitter): [x.com/HeyPuter](https://x.com/HeyPuter)
 * Reddit: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -123,7 +123,7 @@ Suntem întotdeauna bucuroși să te ajutăm cu orice întrebări ai. Nu ezita s
 
 ## Licență
 
-Acest repository, inclusiv tot conținutul său, subproiectele, modulele și componentele, este licențiat sub [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt), cu excepția cazurilor în care se menționează explicit altfel. Bibliotecile terțe incluse în acest repository pot fi supuse propriilor lor licențe.
+Acest repository, inclusiv tot conținutul său, subproiectele, modulele și componentele, este licențiat sub [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt), cu excepția cazurilor în care se menționează explicit altfel. Bibliotecile terțe incluse în acest repository pot fi supuse propriilor lor licențe.
 
 <br/>
 

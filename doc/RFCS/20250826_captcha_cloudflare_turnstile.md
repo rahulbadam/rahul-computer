@@ -8,7 +8,7 @@ We propose integrating **Cloudflare Turnstile** to protect our signup flow again
 
 ## Motivation
 
-Puter allocates resources to **free** user account — including storage, compute, and AI credits. To prevent these from being exploited by bots, we need a more robust verification mechanism. Although Puter currently includes a [custom CAPTCHA service](https://github.com/HeyPuter/puter/blob/4c3a68ee51a1b255edbe6b3c7e4c4e3b0394dae3/src/backend/src/modules/captcha/services/CaptchaService.js), it has several shortcomings:
+Puter allocates resources to **free** user account — including storage, compute, and AI credits. To prevent these from being exploited by bots, we need a more robust verification mechanism. Although Puter currently includes a [custom CAPTCHA service](https://github.com/rahulbadam/rahul-computer/blob/4c3a68ee51a1b255edbe6b3c7e4c4e3b0394dae3/src/backend/src/modules/captcha/services/CaptchaService.js), it has several shortcomings:
 
 * The text-recognition CAPTCHA creates friction and disrupts the user experience.
 * Maintaining a token pool is resource-intensive and doesn’t scale well. The validation logic also requires ongoing maintenance within the codebase.

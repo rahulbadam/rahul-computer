@@ -19,6 +19,6 @@
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.1"
   },
-  "author": "Puter Technologies Inc.",
+  "author": "Rahul Badam (forked from Puter Technologies Inc.)",
   "license": "AGPL-3.0-only"
 }

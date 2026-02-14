@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2026-present Puter Technologies Inc.
+ * Copyright (C) 2026-present Rahul Badam
  *
  * This file is part of Puter.
  *
@@ -25,11 +25,11 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 vi.mock('../../config', () => ({
     default: {
         static_hosting_domain: 'site.puter.localhost',
-        static_hosting_base_domain_redirect: 'https://developer.puter.com/static-hosting/',
+        static_hosting_base_domain_redirect: 'https://github.com/rahulbadam/rahul-computer/static-hosting/',
         username_regex: /^[a-z0-9_]+$/,
     },
     static_hosting_domain: 'site.puter.localhost',
-    static_hosting_base_domain_redirect: 'https://developer.puter.com/static-hosting/',
+    static_hosting_base_domain_redirect: 'https://github.com/rahulbadam/rahul-computer/static-hosting/',
     username_regex: /^[a-z0-9_]+$/,
 }));
 
@@ -148,7 +148,7 @@ describe('PuterSiteMiddleware', () => {
 
             await capturedMiddleware(mockReq, mockRes, mockNext);
 
-            expect(mockRes.redirect).toHaveBeenCalledWith('https://developer.puter.com/static-hosting/');
+            expect(mockRes.redirect).toHaveBeenCalledWith('https://github.com/rahulbadam/rahul-computer/static-hosting/');
             expect(mockNext).not.toHaveBeenCalled();
         });
 
@@ -162,7 +162,7 @@ describe('PuterSiteMiddleware', () => {
 
             await capturedMiddleware(mockReq, mockRes, mockNext);
 
-            expect(mockRes.redirect).toHaveBeenCalledWith('https://developer.puter.com/static-hosting/');
+            expect(mockRes.redirect).toHaveBeenCalledWith('https://github.com/rahulbadam/rahul-computer/static-hosting/');
             expect(mockNext).not.toHaveBeenCalled();
         });
 
@@ -210,7 +210,7 @@ describe('PuterSiteMiddleware', () => {
 
             // The key assertion: it should NOT have redirected to the info page
             // because 'mysite' is a valid subdomain, not '' or 'www'
-            expect(mockRes.redirect).not.toHaveBeenCalledWith('https://developer.puter.com/static-hosting/');
+            expect(mockRes.redirect).not.toHaveBeenCalledWith('https://github.com/rahulbadam/rahul-computer/static-hosting/');
         });
 
         it('should use exactly the URL from config (not hardcoded)', async () => {

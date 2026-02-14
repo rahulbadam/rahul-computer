@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -67,7 +67,7 @@ config.monitor = {
 config.max_subdomains_per_user = 2000;
 config.storage_capacity = 1 * 1024 * 1024 * 1024;
 config.static_hosting_domain = 'site.puter.localhost';
-config.static_hosting_base_domain_redirect = 'https://developer.puter.com/static-hosting/';
+config.static_hosting_base_domain_redirect = 'https://github.com/rahulbadam/rahul-computer';
 
 // Storage limiting is set to false by default
 // Storage available on the mountpoint/drive puter is running is the storage available
@@ -80,9 +80,9 @@ config.app_max_icon_size = 5 * 1024 * 1024;
 
 config.defaultjs_asset_path = '../../';
 
-config.short_description = 'Puter is a privacy-first personal cloud that houses all your files, apps, and games in one private and secure place, accessible from anywhere at any time.';
-config.title = 'Puter';
-config.company = 'Puter Technologies Inc.';
+config.short_description = 'Rahul Computer is a personal fork of Puter - a privacy-first personal cloud that houses all your files, apps, and games in one private and secure place, accessible from anywhere at any time.';
+config.title = 'Rahul Computer';
+config.company = 'Rahul Badam';
 
 config.puter_hosted_data = {
     puter_versions: 'https://version.puter.site/puter_versions.json',
@@ -116,7 +116,7 @@ if ( config.server_id ) {
     }
 }
 
-config.contact_email = `hey@${ config.domain}`;
+config.contact_email = `hey@${config.domain}`;
 
 // TODO: default value will be changed to false in a future release;
 //       details to follow in a future announcement.
@@ -154,14 +154,14 @@ if ( config.os.refined ) {
 
 // NEW_CONFIG_LOADING
 const maybe_port = config =>
-    config.pub_port !== 80 && config.pub_port !== 443 ? `:${ config.pub_port}` : '';
+    config.pub_port !== 80 && config.pub_port !== 443 ? `:${config.pub_port}` : '';
 
 const computed_defaults = {
     pub_port: config => config.http_port,
-    origin: config => `${config.protocol }://${ config.domain }${maybe_port(config)}`,
+    origin: config => `${config.protocol}://${config.domain}${maybe_port(config)}`,
     api_base_url: config => config.experimental_no_subdomain
         ? config.origin
-        : `${config.protocol }://api.${ config.domain }${maybe_port(config)}`,
+        : `${config.protocol}://api.${config.domain}${maybe_port(config)}`,
     social_card: config => `${config.origin}/assets/img/screenshot.png`,
 };
 
@@ -249,7 +249,7 @@ const config_pointer = {};
             // If no logger, just give up
             if ( logger ) {
                 logger.debug('\x1B[36;1mCONFIGURATION MUTATED AT RUNTIME\x1B[0m',
-                                { prop, value });
+                    { prop, value });
             }
             target[prop] = value;
             return true;

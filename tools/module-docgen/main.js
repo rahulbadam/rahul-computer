@@ -1,37 +1,37 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
- * 
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
+ *
  * This file is part of Puter.
- * 
+ *
  * Puter is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Affero General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-const fs = require("fs");
-const path_ = require("path");
+const fs = require('fs');
+const path_ = require('path');
 
 const rootdir = path_.resolve(process.argv[2] ?? '.');
 
 const parser = require('@babel/parser');
 const traverse = require('@babel/traverse').default;
-const { ModuleDoc } = require("./defs");
-const processors = require("./processors");
+const { ModuleDoc } = require('./defs');
+const processors = require('./processors');
 
 const doc_module = new ModuleDoc();
 
 const handle_file = (code, context) => {
     const ast = parser.parse(code);
-    
+
     const traverse_callbacks = {};
     for ( const processor of processors ) {
         if ( processor.match(context) ) {
@@ -51,10 +51,10 @@ const handle_file = (code, context) => {
                     callback(path, context);
                     if ( context.skip ) return;
                 }
-            }
+            },
         });
     }
-}
+};
 
 // Module and class files
 {
@@ -65,14 +65,14 @@ const handle_file = (code, context) => {
             continue;
         }
         if ( ! file.endsWith('.js') ) continue;
-        
+
         const type =
             file.endsWith('Service.js') ? 'service' :
             file.endsWith('Module.js') ? 'module' :
-            null;
-            
+                null;
+
         if ( type === null ) continue;
-        
+
         console.log('file', file);
         const code = fs.readFileSync(path_.join(rootdir, file), 'utf8');
 
@@ -82,14 +82,14 @@ const handle_file = (code, context) => {
         if ( firstLine.startsWith(METADATA_PREFIX) ) {
             metadata = JSON.parse(firstLine.slice(METADATA_PREFIX.length));
         }
-        
+
         const context = {
             metadata,
             type,
             doc_module,
             filename: file,
         };
-        
+
         handle_file(code, context);
     }
 }
@@ -99,7 +99,7 @@ if ( fs.existsSync(path_.join(rootdir, 'lib')) ) {
     const files = fs.readdirSync(path_.join(rootdir, 'lib'));
     for ( const file of files ) {
         if ( file.startsWith('_') ) continue;
-        
+
         const code = fs.readFileSync(path_.join(rootdir, 'lib', file), 'utf8');
 
         const firstLine = code.slice(0, code.indexOf('\n'));
@@ -108,10 +108,10 @@ if ( fs.existsSync(path_.join(rootdir, 'lib')) ) {
         if ( firstLine.startsWith(METADATA_PREFIX) ) {
             metadata = JSON.parse(firstLine.slice(METADATA_PREFIX.length));
         }
-        
+
         const doc_item = doc_module.add_lib();
         doc_item.name = metadata.def ?? file.slice(0, -3);
-        
+
         const context = {
             metadata,
             type: 'lib',
@@ -119,7 +119,7 @@ if ( fs.existsSync(path_.join(rootdir, 'lib')) ) {
             doc_item,
             filename: file,
         };
-        
+
         handle_file(code, context);
     }
 }

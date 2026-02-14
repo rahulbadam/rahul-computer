@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -251,7 +251,7 @@ class DefaultUserService extends BaseService {
             {
                 id: 'reset-password',
                 handler: async (args, ctx) => {
-                    const [ username ] = args;
+                    const [username] = args;
                     const user = await get_user({ username });
                     const tmp_pwd = await this.force_tmp_password_(user);
                     ctx.log(`New password for ${quot(username)} is: ${tmp_pwd}`);

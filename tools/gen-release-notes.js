@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -19,7 +19,7 @@
 import { simpleGit } from 'simple-git';
 
 // GitHub repository URL for generating commit links in release notes
-const REPO_URL = 'https://github.com/HeyPuter/puter';
+const REPO_URL = 'https://github.com/rahulbadam/rahul-computer';
 
 const params = {
     from: 'v2.5.0',
@@ -44,37 +44,37 @@ const parse_conventional_commit = message => {
 
 const types = {
     feat: {
-        label: 'Features'
+        label: 'Features',
     },
     i18n: {
-        label: 'Translations'
+        label: 'Translations',
     },
     fix: {
-        label: 'Bug Fixes'
+        label: 'Bug Fixes',
     },
 };
 
 const scopes = {
     puter: {
-        label: 'Puter'
+        label: 'Puter',
     },
     phoenix: {
-        label: 'Phoenix Shell'
+        label: 'Phoenix Shell',
     },
     git: {
-        label: 'Puter Git'
+        label: 'Puter Git',
     },
     backend: {
-        label: 'Backend'
+        label: 'Backend',
     },
     api: {
         label: 'API',
     },
     gui: {
-        label: 'GUI'
+        label: 'GUI',
     },
     puterjs: {
-        label: 'Puter JS'
+        label: 'Puter JS',
     },
     tools: {
         ignore: true,
@@ -128,7 +128,7 @@ const complicated_cases = [
             meta.type = 'doc';
             meta.scope = undefined;
         }
-    }
+    },
 ];
 
 const retro_prefixes_0 = {
@@ -205,8 +205,8 @@ for ( const commit of commits ) {
         commit.message = message_changes[commit.hash];
     }
     if ( retro_prefixes.hasOwnProperty(commit.hash) ) {
-        commit.message = retro_prefixes[commit.hash] + ': ' +
-            commit.message;
+        commit.message = `${retro_prefixes[commit.hash] }: ${
+            commit.message}`;
     }
     const meta = parse_conventional_commit(commit.message);
     if ( ! meta ) continue;
@@ -223,7 +223,7 @@ for ( const commit of commits ) {
     }
     if ( scopes[scope].ignore ) continue;
     ensure_scope(scope);
-    
+
     if ( types.hasOwnProperty(meta.type) ) {
         data[scope][meta.type].push({ meta, commit });
     }
@@ -240,7 +240,7 @@ for ( const scope_name in data ) {
         if ( items.length == 0 ) continue;
         s += `\n#### ${type.label}\n\n`;
         for ( const { meta, commit } of items ) {
-            const shorthash = commit.hash.slice(0,7)
+            const shorthash = commit.hash.slice(0, 7);
             s += `- ${meta.summary} ([${shorthash}](${REPO_URL}/commit/${commit.hash}))\n`;
         }
     }

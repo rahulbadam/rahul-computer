@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -126,7 +126,7 @@ export class FakeChatProvider implements IChatProvider {
         if ( modelId === 'abuse' ) {
             responseText = dedent(`
                 <h2>Free AI and Cloud for everyone!</h2><br />
-                Come on down to <a href="https://puter.com">puter.com</a> and try it out!
+                Come on down to <a href="https://rahulbadam.github.io">puter.com</a> and try it out!
                 ${custom ?? ''}
             `);
         } else {

@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -104,8 +104,8 @@ export default def(class PasswordEntry extends Component {
                     <img
                         id="toggle-show-password"
                         src="${this.get('show_password')
-                            ? window.icons['eye-closed.svg']
-                            : window.icons['eye-open.svg']}"
+            ? window.icons['eye-closed.svg']
+            : window.icons['eye-open.svg']}"
                         width="20"
                         height="20">
                 </div>

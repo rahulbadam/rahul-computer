@@ -12,7 +12,7 @@
     ·
     <a href="https://developer.puter.com" target="_blank">Developers</a>
     ·
-    <a href="https://github.com/heyputer/puter-cli" target="_blank">CLI</a>
+    <a href="https://github.com/rahulbadam/rahul-computer-cli" target="_blank">CLI</a>
     ·
     <a href="https://discord.com/invite/PQcx7Teh8u">Discord</a>
     ·
@@ -42,7 +42,7 @@ Puter ହେଉଛି ଗୋଟିଏ ଉନ୍ନତ, ଖୋଲା-ମୂଳ �
 ### 💻 Local Development
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -97,7 +97,7 @@ docker compose up
 ### 🚀 Self-Hosting
 
 Self-Hosting ପାଇଁ ବିସ୍ତୃତ ଗାଇଡ୍, କନଫିଗୁରେସନ୍ ଅପ୍ସନ୍ ଏବଂ ବେଷ୍ଟ-ପ୍ରାକ୍ଟିସ୍ ପାଇଁ ଏଠାରେ ଯାଆନ୍ତୁ:  
-[Self-Hosting Documentation](https://github.com/HeyPuter/puter/blob/main/doc/self-hosters/instructions.md)
+[Self-Hosting Documentation](https://github.com/rahulbadam/rahul-computer/blob/main/doc/self-hosters/instructions.md)
 
 <br/>
 
@@ -121,7 +121,7 @@ Puter ହୋଷ୍ଟେଡ୍ ସର୍ଭିସ୍ ଭାବେ ଉପଲବ�
 
 ମେଣ୍ଟେନର୍ ଏବଂ ସମୁଦାୟ ସହିତ ଯୋଡ଼ିବା ପାଇଁ:
 
-- Bug report କିମ୍ବା ନୂଆ feature ବାବଦରେ? [open an issue](https://github.com/HeyPuter/puter/issues/new/choose)
+- Bug report କିମ୍ବା ନୂଆ feature ବାବଦରେ? [open an issue](https://github.com/rahulbadam/rahul-computer/issues/new/choose)
 - Discord: https://discord.com/invite/PQcx7Teh8u
 - X (Twitter): https://x.com/HeyPuter
 - Reddit: https://www.reddit.com/r/puter/

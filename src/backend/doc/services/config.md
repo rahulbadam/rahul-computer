@@ -1,6 +1,6 @@
 # Service Configuration
 
-To locate your configuration file, see [Configuring Puter](https://github.com/HeyPuter/puter/wiki/self_hosters-config).
+To locate your configuration file, see [Configuring Puter](https://github.com/rahulbadam/rahul-computer/wiki/self_hosters-config).
 
 ### Accessing Service Configuration
 

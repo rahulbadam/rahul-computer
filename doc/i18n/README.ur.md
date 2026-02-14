@@ -43,7 +43,7 @@
 ### 💻 مقامی ترقی
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -102,7 +102,7 @@ Puter کو [**puter.com**](https://puter.com) پر میزبان سروس کے ط
 
 منتظمین اور کمیونٹی سے جڑنے کے لیے یہ چینلز استعمال کریں:
 
-- بگ رپورٹ یا فیچر درخواست؟ براہ کرم [ایک مسئلہ کھولیں](https://github.com/HeyPuter/puter/issues/new/choose).
+- بگ رپورٹ یا فیچر درخواست؟ براہ کرم [ایک مسئلہ کھولیں](https://github.com/rahulbadam/rahul-computer/issues/new/choose).
 - ڈسکورڈ: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - ایکس (ٹوئٹر): [x.com/HeyPuter](https://x.com/HeyPuter)
 - ریڈڈٹ: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -116,6 +116,6 @@ Puter کو [**puter.com**](https://puter.com) پر میزبان سروس کے ط
 
 ## لائسنس
 
-اس ریپوزٹری، بشمول اس کے تمام مواد، ذیلی پروجیکٹس، ماڈیولز، اور کمپوننٹس، کو [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt) کے تحت لائسنس کیا گیا ہے جب تک کہ واضح طور پر کہیں اور نہ کہا گیا ہو۔ اس ریپوزٹری میں شامل تھرڈ پارٹی لائبریریاں اپنی لائسنس کے تابع ہو سکتی ہیں۔
+اس ریپوزٹری، بشمول اس کے تمام مواد، ذیلی پروجیکٹس، ماڈیولز، اور کمپوننٹس، کو [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt) کے تحت لائسنس کیا گیا ہے جب تک کہ واضح طور پر کہیں اور نہ کہا گیا ہو۔ اس ریپوزٹری میں شامل تھرڈ پارٹی لائبریریاں اپنی لائسنس کے تابع ہو سکتی ہیں۔
 
 <br/>

@@ -47,7 +47,7 @@
 ### 💻 פיתוח מקומי (Localhost)
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -111,7 +111,7 @@ docker compose up
 
 צור קשר עם המפתחים והקהילה דרך הערוצים הבאים:
 
-- דיווח על באג או בקשה לתוכן? אנא [פתח פניה](https://github.com/HeyPuter/puter/issues/new/choose).
+- דיווח על באג או בקשה לתוכן? אנא [פתח פניה](https://github.com/rahulbadam/rahul-computer/issues/new/choose).
 - Discord: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - X (Twitter): [x.com/HeyPuter](https://x.com/HeyPuter)
 - Reddit: [reddit.com/r/puter](https://www.reddit.com/r/puter.)
@@ -125,6 +125,6 @@ docker compose up
 
 ## רישיון
 
-ספריה זו, כולל כל התכנים שלה, תתי הפרויקטים, המודולים והרכיבים שלה, מורשית תחת [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt) אלא אם נאמר אחרת במפורש. לספריות צד שלישי הכלולות בספרייה זו עשויות להיות רישיונות משלהן.
+ספריה זו, כולל כל התכנים שלה, תתי הפרויקטים, המודולים והרכיבים שלה, מורשית תחת [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt) אלא אם נאמר אחרת במפורש. לספריות צד שלישי הכלולות בספרייה זו עשויות להיות רישיונות משלהן.
 
 <br/>

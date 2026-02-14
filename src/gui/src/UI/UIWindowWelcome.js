@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -37,8 +37,8 @@ async function UIWindowWelcome (options) {
     h += '<div class="welcome-window-footer">';
     h += `<a href="/terms" target="_blank">${i18n('welcome_terms')}</a>`;
     h += `<a href="/privacy" style="margin-left: 20px;" target="_blank">${i18n('welcome_privacy')}</a>`;
-    h += `<a href="https://developer.puter.com" style="margin-left: 20px;" target="_blank">${i18n('welcome_developers')}</a>`;
-    h += `<a href="https://github.com/heyputer/puter" style="margin-left: 20px;" target="_blank">${i18n('welcome_open_source')}</a>`;
+    h += `<a href="https://github.com/rahulbadam/rahul-computer" style="margin-left: 20px;" target="_blank">${i18n('welcome_developers')}</a>`;
+    h += `<a href="https://github.com/rahulbadam/rahul-computer" style="margin-left: 20px;" target="_blank">${i18n('welcome_open_source')}</a>`;
     h += '</div>';
     h += '</div>';
     h += '</div>';

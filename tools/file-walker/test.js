@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -32,7 +32,7 @@ const EXCLUDE_LISTS = {
         /src\/backend\/src\/public\/assets/,
         /^src\/gui\/src\/lib/,
         /^eslint\.config\.js$/,
-    ]
+    ],
 };
 
 EXCLUDE_LISTS.NOT_AGPL = [
@@ -43,7 +43,7 @@ EXCLUDE_LISTS.NOT_AGPL = [
 const hl_readdir = async path => {
     const names = await fs.promises.readdir(path);
     const entries = [];
-    
+
     for ( const name of names ) {
         // wet: copied from phoenix shell
         const stat_path = path_.join(path, name);
@@ -62,7 +62,7 @@ const hl_readdir = async path => {
             gid: stat.gid,
         });
     }
-    
+
     return entries;
 };
 
@@ -92,47 +92,47 @@ const walk = async function* walk (options, root_path, components = []) {
 const modes = {
     primary_source_files: {
         excludes: [
-        ]
+        ],
     },
 };
 
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 
-async function git_blame(path) {
-  const abs_path = path_.resolve(path);
-  
-  try {
-    const { stdout } = await exec(`git blame -f "${abs_path}"`, {
-        maxBuffer: 1024 * 1024
-    });
-    
-    const blameLines = stdout.split('\n');
-    const parsedBlame = blameLines
-        .map(line => {
-            if (!line.trim()) return null;
-            
-            // console.log(line);
-            const parts = line.split(/\s+/);
-            let [commitHash, path, author, timestamp, lineNumber, , ,] = parts;
-            author = author.slice(1);
-            
-            const o = {
-                commitHash,
-                author,
-                timestamp,
-                lineNumber: parseInt(lineNumber, 10),
-            };
-            return o;
-        })
-        .filter(item => item !== null)
+async function git_blame (path) {
+    const abs_path = path_.resolve(path);
+
+    try {
+        const { stdout } = await exec(`git blame -f "${abs_path}"`, {
+            maxBuffer: 1024 * 1024,
+        });
+
+        const blameLines = stdout.split('\n');
+        const parsedBlame = blameLines
+            .map(line => {
+                if ( ! line.trim() ) return null;
+
+                // console.log(line);
+                const parts = line.split(/\s+/);
+                let [commitHash, path, author, timestamp, lineNumber, , ,] = parts;
+                author = author.slice(1);
+
+                const o = {
+                    commitHash,
+                    author,
+                    timestamp,
+                    lineNumber: parseInt(lineNumber, 10),
+                };
+                return o;
+            })
+            .filter(item => item !== null)
         ;
-        
-    return parsedBlame;
-  } catch (error) {
-    console.log('AZXV')
+
+        return parsedBlame;
+    } catch ( error ) {
+    console.log('AZXV');
     throw new Error(`Error executing git blame: ${error.message}`);
-  }
+    }
 }
 
 // Example usage
@@ -142,10 +142,10 @@ const blame = async (path) => {
         // console.log('result?', result)
         return result;
     } catch ( e ) {
-        console.log('SKIPPED: ' + e.message);
+        console.log(`SKIPPED: ${ e.message}`);
     }
     return [];
-}
+};
 
 const walk_test = async () => {
     // console.log(await hl_readdir('.'));
@@ -155,14 +155,14 @@ const walk_test = async () => {
         if ( ! value.is_dir ) continue;
         console.log('value', value.path);
     }
-}
+};
 
 const authors = {};
 
 const blame_test = async () => {
     // const results = await blame('src/backend/src/services/HostDiskUsageService.js');
     // const results = await blame('package.json');
-    console.log('results', results)
+    console.log('results', results);
     return;
     for ( const result of results ) {
         if ( ! authors[result.author] ) {
@@ -170,10 +170,9 @@ const blame_test = async () => {
         }
         authors[result.author].lines++;
     }
-    
-    console.log('AUTHORS', authors);
-}
 
+    console.log('AUTHORS', authors);
+};
 
 /*
 Contribution count function to test file walking and
@@ -195,7 +194,7 @@ const walk_and_blame = async () => {
         }
     }
     console.log('AUTHORS', authors);
-}
+};
 
 if ( require.main === module ) {
     const main = walk_and_blame;

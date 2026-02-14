@@ -1,7 +1,7 @@
 {
     "name": "useapi",
     "version": "1.0.0",
-    "author": "Puter Technologies Inc.",
+    "author": "Rahul Badam (forked from Puter Technologies Inc.)",
     "license": "AGPL-3.0-only",
     "description": "Dynamic import interface for Puter mods",
     "main": "main.js"

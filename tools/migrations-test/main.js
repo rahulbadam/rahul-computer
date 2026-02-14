@@ -1,18 +1,18 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
- * 
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
+ *
  * This file is part of Puter.
- * 
+ *
  * Puter is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Affero General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
@@ -20,7 +20,7 @@
 const path_ = require('node:path');
 const fs = require('node:fs');
 const { spawnSync } = require('node:child_process');
-const prompt = require('prompt-sync')({sigint: true}); 
+const prompt = require('prompt-sync')({ sigint: true });
 
 const ind_str = () => Array(ind).fill(' --').join('');
 
@@ -47,18 +47,22 @@ const log = {
             console.error(e);
         }
     },
-    indent () { ind++; },
-    dedent () { ind--; },
+    indent () {
+        ind++;
+    },
+    dedent () {
+        ind--;
+    },
     heading (title) {
         const circle = '🔵';
         console.log(`\n\x1b[36;1m${circle} ${title} ${circle}\x1b[0m`);
-    }
+    },
 };
 
 const areyousure = (message, options = {}) => {
     const { crit } = options;
     const logfn = crit ? log.crit : log.warn;
-    
+
     logfn(message);
     const answer = prompt(`\x1B[35;1m[?]\x1B[0m ${ options?.prompt ?? 'Are you sure?' } (y/n): `);
     if ( answer !== 'y' ) {
@@ -67,10 +71,10 @@ const areyousure = (message, options = {}) => {
             log.info(options.fail_hint);
         }
 
-        console.log(`\x1B[31;21;1mAborted.\x1B[0m`);
+        console.log('\x1B[31;21;1mAborted.\x1B[0m');
         process.exit(1);
     }
-}
+};
 
 if ( ! fs.existsSync('.is_puter_repository') ) {
     throw new Error('This script must be run from the root of a puter repository');
@@ -78,8 +82,8 @@ if ( ! fs.existsSync('.is_puter_repository') ) {
 
 areyousure(
     'This script will delete all data in the database. Are you sure you want to proceed?',
-    { crit: true }
-)
+    { crit: true },
+);
 
 let backup_created = false;
 
@@ -92,7 +96,7 @@ const delete_db = () => {
         return;
     }
     if ( ! backup_created ) {
-        log.info(`Creating a backup of the database...`);
+        log.info('Creating a backup of the database...');
         const RANDOM = Math.floor(Math.random() * 1000000);
         const DATE = new Date().toISOString().replace(/:/g, '-');
         fs.renameSync(DBPATH, `${DBPATH}_${DATE}_${RANDOM}.bak`);
@@ -101,7 +105,7 @@ const delete_db = () => {
     }
     log.info('Removing database file');
     fs.unlinkSync(DBPATH);
-}
+};
 
 const pwd = process.cwd();
 const boot_script_path = path_.join(pwd, 'tools/migrations-test/noop.puter.json');
@@ -116,7 +120,7 @@ const launch_puter = (args) => {
                 ...process.env,
                 NO_VAR_RUNTIME: '1',
             },
-        }
+        },
     );
     ret.ok = ret.status === 0;
     return ret;
@@ -124,7 +128,7 @@ const launch_puter = (args) => {
 
 {
     delete_db();
-    log.info(`Test case: fresh install`);
+    log.info('Test case: fresh install');
     if ( ! launch_puter([
         '--quit-on-alarm',
         `--boot-script=${boot_script_path}`,
@@ -135,9 +139,9 @@ const launch_puter = (args) => {
 }
 {
     delete_db();
-    log.info(`Test case: migrate to 21, then migrate to 24`);
+    log.info('Test case: migrate to 21, then migrate to 24');
     if ( ! launch_puter([
-        `--database-target-version=21`,
+        '--database-target-version=21',
         '--quit-on-alarm',
         `--boot-script=${boot_script_path}`,
     ]).ok ) {
@@ -145,7 +149,7 @@ const launch_puter = (args) => {
         process.exit(1);
     }
     if ( ! launch_puter([
-        `--database-target-version=24`,
+        '--database-target-version=24',
         '--quit-on-alarm',
         `--boot-script=${boot_script_path}`,
     ]).ok ) {

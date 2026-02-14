@@ -41,7 +41,7 @@ Puter — це просунута, інтернет-ОС, з відкритим 
 ### Локальна розробка
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -106,7 +106,7 @@ Puter доступний як hosted service на [**puter.com**](https://puter.
 
 Зв'язатися з розробниками та спільнотою можна через такі канали:
 
-- Повідомити про помилку, або запит щодо нової фічі? Будь ласка, [створіть issue](https://github.com/HeyPuter/puter/issues/new/choose).
+- Повідомити про помилку, або запит щодо нової фічі? Будь ласка, [створіть issue](https://github.com/rahulbadam/rahul-computer/issues/new/choose).
 - Discord: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - X (Twitter): [x.com/HeyPuter](https://x.com/HeyPuter)
 - Reddit: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -120,6 +120,6 @@ Puter доступний як hosted service на [**puter.com**](https://puter.
 
 ##  License
 
-Цей репорзиторій, включаючи увесь його контент, дочірні проєкти, модулі, і компоненти, ліцензовано за [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt), якщо явно не вказано інше. Сторонні бібліотеки, включені в цей репозиторій, можуть підпадати під дію інших ліцензій.
+Цей репорзиторій, включаючи увесь його контент, дочірні проєкти, модулі, і компоненти, ліцензовано за [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt), якщо явно не вказано інше. Сторонні бібліотеки, включені в цей репозиторій, можуть підпадати під дію інших ліцензій.
 
 <br/>

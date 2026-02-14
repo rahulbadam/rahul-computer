@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -20,7 +20,7 @@ import translations from '../src/gui/src/i18n/translations/translations.js';
 import fs from 'fs';
 
 let hadError = false;
-function reportError(message) {
+function reportError (message) {
     hadError = true;
     process.stderr.write(`❌ ${message}\n`);
 }
@@ -32,28 +32,28 @@ function reportError(message) {
 * @async
 * @returns {Promise<void>}
 */
-async function checkTranslationRegistrations() {
+async function checkTranslationRegistrations () {
     const files = await fs.promises.readdir('./src/gui/src/i18n/translations');
-    for (const fileName of files) {
-        if (!fileName.endsWith('.js')) continue;
+    for ( const fileName of files ) {
+        if ( ! fileName.endsWith('.js') ) continue;
         const translationName = fileName.substring(0, fileName.length - 3);
-        if (translationName === 'translations') continue;
+        if ( translationName === 'translations' ) continue;
 
         const translation = translations[translationName];
-        if (!translation) {
+        if ( ! translation ) {
             reportError(`Translation '${translationName}' is not listed in translations.js, please add it!`);
             continue;
         }
 
-        if (!translation.name) {
+        if ( ! translation.name ) {
             reportError(`Translation '${translationName}' is missing a name!`);
         }
-        if (!translation.code) {
+        if ( ! translation.code ) {
             reportError(`Translation '${translationName}' is missing a code!`);
-        } else if (translation.code !== translationName) {
+        } else if ( translation.code !== translationName ) {
             reportError(`Translation '${translationName}' has code '${translation.code}', which should be '${translationName}'!`);
         }
-        if (typeof translation.dictionary !== 'object') {
+        if ( typeof translation.dictionary !== 'object' ) {
             reportError(`Translation '${translationName}' is missing a translations dictionary! Should be an object.`);
         }
     }
@@ -61,23 +61,23 @@ async function checkTranslationRegistrations() {
 
 /**
 * Validates that translation dictionaries only contain keys present in en.js
-* 
+*
 * Iterates through all translations (except English) and checks that each key in their
 * dictionary exists in the en.js dictionary. Reports errors for any keys that don't exist.
 * Skips validation if the translation dictionary is missing or invalid.
 */
-function checkTranslationKeys() {
+function checkTranslationKeys () {
     const enDictionary = translations.en.dictionary;
 
-    for (const translation of Object.values(translations)) {
+    for ( const translation of Object.values(translations) ) {
         // We compare against the en translation, so checking it doesn't make sense.
-        if (translation.code === 'en') continue;
+        if ( translation.code === 'en' ) continue;
 
         // If the dictionary is missing, we already reported that in checkTranslationRegistrations().
-        if (typeof translation.dictionary !== "object") continue;
+        if ( typeof translation.dictionary !== 'object' ) continue;
 
-        for (const [key, value] of Object.entries(translation.dictionary)) {
-            if (!enDictionary[key]) {
+        for ( const [key, value] of Object.entries(translation.dictionary) ) {
+            if ( ! enDictionary[key] ) {
                 reportError(`Translation '${translation.code}' has key '${key}' that doesn't exist in 'en'!`);
             }
         }
@@ -86,14 +86,14 @@ function checkTranslationKeys() {
 
 /**
 * Checks for usage of i18n() calls in source files and verifies that all translation keys exist in en.js
-* 
+*
 * Scans JavaScript files in specified source directories for i18n() function calls using regex.
 * Validates that each key used in these calls exists in the English translation dictionary.
-* 
+*
 * @async
 * @returns {Promise<void>}
 */
-async function checkTranslationUsage() {
+async function checkTranslationUsage () {
     const enDictionary = translations.en.dictionary;
 
     const sourceDirectories = [
@@ -105,17 +105,17 @@ async function checkTranslationUsage() {
     // The key itself is at index 2 of the result.
     const i18nRegex = /i18n\((['"])(.*?)\1\)/g;
 
-    for (const dir of sourceDirectories) {
+    for ( const dir of sourceDirectories ) {
         const files = await fs.promises.readdir(dir, { recursive: true });
-        for (const relativeFileName of files) {
-            if (!relativeFileName.endsWith('.js')) continue;
+        for ( const relativeFileName of files ) {
+            if ( ! relativeFileName.endsWith('.js') ) continue;
             const fileName = `${dir}/${relativeFileName}`;
 
             const fileContents = await fs.promises.readFile(fileName, { encoding: 'utf8' });
             const i18nUses = fileContents.matchAll(i18nRegex);
-            for (const use of i18nUses) {
+            for ( const use of i18nUses ) {
                 const key = use[2];
-                if (!enDictionary.hasOwnProperty(key)) {
+                if ( ! enDictionary.hasOwnProperty(key) ) {
                     reportError(`Unrecognized i18n key: call ${use[0]} in ${fileName}`);
                 }
             }
@@ -127,7 +127,7 @@ await checkTranslationRegistrations();
 checkTranslationKeys();
 await checkTranslationUsage();
 
-if (hadError) {
+if ( hadError ) {
     process.stdout.write('Errors were found in translation files.\n');
     process.exit(1);
 }

@@ -2,9 +2,9 @@ class UsageLimitDialog extends (globalThis.HTMLElement || Object) {
     constructor (message) {
         super();
         this.message = message || 'You have reached your usage limit for this account.';
-        
+
         this.attachShadow({ mode: 'open' });
-        
+
         this.shadowRoot.innerHTML = `
         <style>
             dialog {
@@ -141,23 +141,23 @@ class UsageLimitDialog extends (globalThis.HTMLElement || Object) {
         </dialog>
         `;
     }
-    
+
     connectedCallback () {
         const dialog = this.shadowRoot.querySelector('dialog');
-        
+
         this.shadowRoot.querySelector('.close-btn').addEventListener('click', () => {
             this.close();
         });
-        
+
         this.shadowRoot.querySelector('#close-btn').addEventListener('click', () => {
             this.close();
         });
-        
+
         this.shadowRoot.querySelector('#upgrade-btn').addEventListener('click', () => {
-            window.open('https://puter.com/dashboard', '_blank');
+            window.open('https://rahulbadam.github.io/dashboard', '_blank');
             this.close();
         });
-        
+
         // Close on backdrop click
         dialog.addEventListener('click', (e) => {
             if ( e.target === dialog ) {
@@ -165,11 +165,11 @@ class UsageLimitDialog extends (globalThis.HTMLElement || Object) {
             }
         });
     }
-    
+
     open () {
         this.shadowRoot.querySelector('dialog').showModal();
     }
-    
+
     close () {
         this.shadowRoot.querySelector('dialog').close();
         this.remove();
@@ -193,16 +193,15 @@ export function showUsageLimitDialog (message) {
         console.warn('[Puter]', message);
         return;
     }
-    
+
     // Check if dialog is already shown to prevent duplicates
     if ( document.querySelector('usage-limit-dialog') ) {
         return;
     }
-    
+
     const dialog = new UsageLimitDialog(message);
     document.body.appendChild(dialog);
     dialog.open();
 }
 
 export default UsageLimitDialog;
-

@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -149,7 +149,7 @@ async function UIWindowPublishWebsite (target_dir_uid, target_dir_name, target_d
                 if ( radioButton.is(':disabled') ) {
                     e.preventDefault();
                     // Could show upgrade modal here in the future
-                    if ( puter.defaultGUIOrigin === 'https://puter.com' ) {
+                    if ( puter.defaultGUIOrigin === 'https://rahulbadam.github.io' ) {
                         $(this_window).find('.publish-website-error-msg').html(
                                         'Custom domains require a Premium subscription. <a href="/settings/subscriptions" target="_blank">Upgrade now</a> to use your own domain name.');
                     } else {

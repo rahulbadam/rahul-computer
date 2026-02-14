@@ -6,7 +6,7 @@ We at **Puter** are committed to maintaining a secure experience for our users a
 
 The following are in scope for this program:
 
-* **The Puter open-source project** (available at [github.com/HeyPuter](https://github.com/HeyPuter/puter))
+* **The Puter open-source project** (available at [github.com/HeyPuter](https://github.com/rahulbadam/rahul-computer))
 * **`puter.com`**
 * **`api.puter.com`**
 

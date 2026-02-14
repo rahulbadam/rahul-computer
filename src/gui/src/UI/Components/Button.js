@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -64,7 +64,7 @@ export default def(class Button extends Component {
         $(template).html(/*html*/`
             <button type="submit" class="button ${this.get('style') !== 'small' ? 'button-block' : ''} button-${this.get('style')}" style="margin-top:10px;" disabled>${
                 html_encode(this.get('label'))
-            }</button>
+        }</button>
         `);
 
     }

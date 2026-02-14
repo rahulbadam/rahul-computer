@@ -43,7 +43,7 @@ Puterは、機能豊富で非常に高速、そして高い拡張性を持つ、
 ### 💻 ローカル開発
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -104,7 +104,7 @@ Puterは[**puter.com**](https://puter.com)でホストサービスとして利�
 
 メンテナーやコミュニティと以下のチャンネルを通じてつながりましょう：
 
-- バグ報告や機能リクエストがありますか？ [issueを開く](https://github.com/HeyPuter/puter/issues/new/choose) してください。
+- バグ報告や機能リクエストがありますか？ [issueを開く](https://github.com/rahulbadam/rahul-computer/issues/new/choose) してください。
 - Discord: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - X (Twitter): [x.com/HeyPuter](https://x.com/HeyPuter)
 - Reddit: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -118,6 +118,6 @@ Puterは[**puter.com**](https://puter.com)でホストサービスとして利�
 
 ## ライセンス
 
-このリポジトリ、ならびにそのすべてのコンテンツ、サブプロジェクト、モジュール、コンポーネントは、[AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt)の下でライセンスされています。明示的に異なるライセンスが示されている場合を除きます。このリポジトリに含まれるサードパーティのライブラリは、それぞれのライセンスが適用される場合があります。
+このリポジトリ、ならびにそのすべてのコンテンツ、サブプロジェクト、モジュール、コンポーネントは、[AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt)の下でライセンスされています。明示的に異なるライセンスが示されている場合を除きます。このリポジトリに含まれるサードパーティのライブラリは、それぞれのライセンスが適用される場合があります。
 
 <br/>

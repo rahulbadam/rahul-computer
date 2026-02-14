@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -204,11 +204,11 @@ router.get('/file', async (req, res, next) => {
 
     // stream data from S3
     try {
-        /* eslint-disable */
+
         const fsNode = await svc_filesystem.node(
             new NodeRawEntrySelector(fsentry[0]),
         );
-        /* eslint-enable */
+
         const ll_read = new LLRead();
         const stream = await ll_read.run({
             range,

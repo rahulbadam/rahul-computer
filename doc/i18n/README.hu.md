@@ -41,7 +41,7 @@ A Puter egy fejlett, nyílt forráskódú internetes operációs rendszer, amely
 ### 💻 Helyi (lokális) fejlesztés
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -106,7 +106,7 @@ A Puter elérhető hostolt szolgáltatásként a [**puter.com**](https://puter.c
 
 Lépj kapcsolatba a fejlesztőkkel és a közösséggel az alábbi platformokon:
 
-- Észrevételeid/javaslataid vannak? Az [alábbi linken](https://github.com/HeyPuter/puter/issues/new/choose) megoszthatod velünk.
+- Észrevételeid/javaslataid vannak? Az [alábbi linken](https://github.com/rahulbadam/rahul-computer/issues/new/choose) megoszthatod velünk.
 - Discord: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - X (Twitter): [x.com/HeyPuter](https://x.com/HeyPuter)
 - Reddit: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -123,6 +123,6 @@ Mindig örömmel segítünk bármilyen felmerülő kérdésben. Bátran kérdezz
 ##  License
 
 
-Ez a repo, beleértve annak minden tartalmát, alprojektjeit, moduljait és komponenseit, az [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt) licenc alatt áll, hacsak másképp nem rendelkeznek róla. A repoban szereplő harmadik fél által fejlesztett könyvtárak saját licencfeltételek alá eshetnek.
+Ez a repo, beleértve annak minden tartalmát, alprojektjeit, moduljait és komponenseit, az [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt) licenc alatt áll, hacsak másképp nem rendelkeznek róla. A repoban szereplő harmadik fél által fejlesztett könyvtárak saját licencfeltételek alá eshetnek.
 
 <br/>

@@ -42,7 +42,7 @@ Puter는 오픈소스 인터넷 운영 체제로, 매우 빠르고 확장성이 
 ### 💻 로컬 환경 개발
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -107,7 +107,7 @@ Puter는 [**puter.com**](https://puter.com)에서 호스팅 서비스로 이용�
 
 다음 채널을 통해 관리자 및 커뮤니티와 소통하세요:
 
-- 버그 신고나 기능 요청이 있으신가요? [이슈를 열어주세요.](https://github.com/HeyPuter/puter/issues/new/choose).
+- 버그 신고나 기능 요청이 있으신가요? [이슈를 열어주세요.](https://github.com/rahulbadam/rahul-computer/issues/new/choose).
 - Discord: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - X (Twitter): [x.com/HeyPuter](https://x.com/HeyPuter)
 - Reddit: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -122,6 +122,6 @@ Puter는 [**puter.com**](https://puter.com)에서 호스팅 서비스로 이용�
 
 ## 라이선스
 
-이 저장소는 모든 내용, 하위 프로젝트, 모듈 및 구성 요소를 포함하여 명시적으로 달리 명시되지 않는 한 [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt) 라이선스 하에 제공됩니다. 이 저장소에 포함된 제3자 라이브러리는 해당 라이브러리의 고유 라이선스를 따를 수 있습니다.
+이 저장소는 모든 내용, 하위 프로젝트, 모듈 및 구성 요소를 포함하여 명시적으로 달리 명시되지 않는 한 [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt) 라이선스 하에 제공됩니다. 이 저장소에 포함된 제3자 라이브러리는 해당 라이브러리의 고유 라이선스를 따를 수 있습니다.
 
 <br/>

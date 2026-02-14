@@ -6,9 +6,9 @@ Welcome to Puter, the open-source distributed internet operating system. We're e
 
 # Report bugs
 
-Before reporting a bug, please check [the issues on our GitHub repository](https://github.com/HeyPuter/puter/issues) to see if the bug has already been reported. If it has, you can add a comment to the existing issue with any additional information you have.
+Before reporting a bug, please check [the issues on our GitHub repository](https://github.com/rahulbadam/rahul-computer/issues) to see if the bug has already been reported. If it has, you can add a comment to the existing issue with any additional information you have.
 
-If you find a new bug in Puter, please [open an issue on our GitHub repository](https://github.com/HeyPuter/puter/issues/new). We'll do our best to address the issue as soon as possible. When reporting a bug, please include as much information as possible, including:
+If you find a new bug in Puter, please [open an issue on our GitHub repository](https://github.com/rahulbadam/rahul-computer/issues/new). We'll do our best to address the issue as soon as possible. When reporting a bug, please include as much information as possible, including:
 
 - A clear and descriptive title
 - A description of the issue
@@ -27,7 +27,7 @@ Maintainers will apply the appropriate labels to your issue.
 
 # Suggest new features
 
-If you have an idea for a new feature in Puter, please open a new discussion thread on our [GitHub repository](https://github.com/HeyPuter/puter/discussions) to discuss your idea with the community. We'll do our best to respond to your suggestion as soon as possible.
+If you have an idea for a new feature in Puter, please open a new discussion thread on our [GitHub repository](https://github.com/rahulbadam/rahul-computer/discussions) to discuss your idea with the community. We'll do our best to respond to your suggestion as soon as possible.
 
 When suggesting a new feature, please include as much information as possible, including:
 

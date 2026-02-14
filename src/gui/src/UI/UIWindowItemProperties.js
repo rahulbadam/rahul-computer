@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -178,7 +178,7 @@ async function UIWindowItemProperties (item_name, item_path, item_uid, left, top
                         // remove the website badge from all instances of the dir
                         $(`.item[data-uid="${item_uid}"]`).find('.item-has-website-badge').fadeOut(200);
                     }
-                });
+                                });
             });
         },
     });

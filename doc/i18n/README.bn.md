@@ -43,7 +43,7 @@ Puter একটি উন্নত, ওপেন-সোর্স ইন্টা
 
 ```bash
 Copy code
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -119,6 +119,6 @@ Puter [**puter.com**](https://puter.com) এ হোস্টেড সার্�
 
 ## লাইসেন্স
 
-এই রিপোজিটরি, এর সমস্ত বিষয়বস্তু, সাব-প্রকল্প, মডিউল, এবং কম্পোনেন্ট সহ [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt) লাইসেন্সের অধীনে লাইসেন্সকৃত, যদি অন্যথায় স্পষ্টভাবে উল্লেখ না করা হয়। এই রিপোজিটরিতে অন্তর্ভুক্ত তৃতীয় পক্ষের লাইব্রেরিগুলি তাদের নিজস্ব লাইসেন্সের অধীনে হতে পারে।
+এই রিপোজিটরি, এর সমস্ত বিষয়বস্তু, সাব-প্রকল্প, মডিউল, এবং কম্পোনেন্ট সহ [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt) লাইসেন্সের অধীনে লাইসেন্সকৃত, যদি অন্যথায় স্পষ্টভাবে উল্লেখ না করা হয়। এই রিপোজিটরিতে অন্তর্ভুক্ত তৃতীয় পক্ষের লাইব্রেরিগুলি তাদের নিজস্ব লাইসেন্সের অধীনে হতে পারে।
 
 <br/>

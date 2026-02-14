@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -111,19 +111,19 @@ const config_paths = ({ path_checks }) => ({ path_ }) => [
     },
     {
         path: '/etc/puter',
-        checks: [ path_checks.skip_if_not_exists ],
+        checks: [path_checks.skip_if_not_exists],
     },
     {
         get path () {
             return path_.join(original_cwd, 'volatile/config');
         },
-        checks: [ path_checks.skip_if_not_in_repo ],
+        checks: [path_checks.skip_if_not_in_repo],
     },
     {
         get path () {
             return path_.join(original_cwd, 'config');
         },
-        checks: [ path_checks.skip_if_not_exists ],
+        checks: [path_checks.skip_if_not_exists],
     },
 ];
 
@@ -155,13 +155,13 @@ const runtime_paths = ({ path_checks }) => ({ path_ }) => [
         get path () {
             return path_.join(original_cwd, 'volatile/runtime');
         },
-        checks: [ path_checks.skip_if_not_in_repo ],
+        checks: [path_checks.skip_if_not_in_repo],
     },
     {
         get path () {
             return path_.join(original_cwd, 'runtime');
         },
-        checks: [ path_checks.skip_if_not_exists ],
+        checks: [path_checks.skip_if_not_exists],
     },
 ];
 
@@ -187,7 +187,7 @@ const mod_paths = ({ path_checks, entry_path }) => ({ path_ }) => [
         get path () {
             return path_.join(path_.dirname(entry_path || require.main.filename), '../mods');
         },
-        checks: [ path_checks.skip_if_not_exists ],
+        checks: [path_checks.skip_if_not_exists],
     },
 ];
 
@@ -239,7 +239,7 @@ class RuntimeEnvironment extends AdvancedBase {
         //       but it was never used
         const pwd_path_entry = this.get_first_suitable_path_({ pathFor: 'working directory' },
                         this.runtime_paths,
-                        [ this.path_checks.require_write_permission ]);
+                        [this.path_checks.require_write_permission]);
 
         process.chdir(pwd_path_entry.path);
 

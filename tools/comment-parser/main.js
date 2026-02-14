@@ -1,18 +1,18 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
- * 
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
+ *
  * This file is part of Puter.
- * 
+ *
  * Puter is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published
  * by the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Affero General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
@@ -20,30 +20,29 @@
 const lib = {};
 lib.dedent_lines = lines => {
     // If any lines are just spaces, remove the spaces
-    for ( let i=0 ; i < lines.length ; i++ ) {
+    for ( let i = 0 ; i < lines.length ; i++ ) {
         if ( /^\s+$/.test(lines[i]) ) lines[i] = '';
     }
-    
+
     // Remove leading and trailing blanks
     while ( lines[0] === '' ) lines.shift();
-    while ( lines[lines.length-1] === '' ) lines.pop();
+    while ( lines[lines.length - 1] === '' ) lines.pop();
 
     let min_indent = Number.MAX_SAFE_INTEGER;
-    for ( let i=0 ; i < lines.length ; i++ ) {
+    for ( let i = 0 ; i < lines.length ; i++ ) {
         if ( lines[i] === '' ) continue;
         let n_spaces = 0;
-        for ( let j=0 ; j < lines[i].length ; j++ ) {
+        for ( let j = 0 ; j < lines[i].length ; j++ ) {
             if ( lines[i][j] === ' ' ) n_spaces++;
             else break;
         }
         if ( n_spaces < min_indent ) min_indent = n_spaces;
     }
-    for ( let i=0 ; i < lines.length ; i++ ) {
+    for ( let i = 0 ; i < lines.length ; i++ ) {
         if ( lines[i] === '' ) continue;
         lines[i] = lines[i].slice(min_indent);
     }
 };
-
 
 /**
 * Creates a StringStream object for parsing a string with position tracking
@@ -81,7 +80,7 @@ const StringStream = (str, { state_ } = {}) => {
                 const re = re_or_lit;
                 return re.test(str.slice(state.pos));
             }
-            
+
             const lit = re_or_lit;
             return lit === str.slice(state.pos, state.pos + lit.length);
         },
@@ -111,13 +110,13 @@ const StringStream = (str, { state_ } = {}) => {
                 clean(str.slice(0, Math.min(6, l1)))
             }"... |${state.pos}| ..."${
                 clean(str.slice(state.pos, state.pos + Math.min(6, l2)))
-            }"]`
-        }
+            }"]`;
+        },
     };
 };
 
 const LinesCommentParser = ({
-    prefix
+    prefix,
 }) => {
     return {
         parse: async (stream) => {
@@ -129,21 +128,21 @@ const LinesCommentParser = ({
                 lines.push(line);
                 stream.fwd();
                 stream.skip_matching([' ', '\t']);
-                if ( await stream.get_char() === '\n' ){
+                if ( await stream.get_char() === '\n' ) {
                     stream.fwd();
                     break;
                 }
                 stream.skip_whitespace();
             }
             if ( lines.length === 0 ) return;
-            for ( let i=0 ; i < lines.length ; i++ ) {
+            for ( let i = 0 ; i < lines.length ; i++ ) {
                 lines[i] = lines[i].slice(prefix.length);
             }
             lib.dedent_lines(lines);
             return {
                 lines,
             };
-        }
+        },
     };
 };
 
@@ -162,42 +161,41 @@ const BlockCommentParser = ({
             stream.fwd(end.length);
             // console.log('ending at', await stream.debug())
             const lines = contents.split('\n');
-            
+
             // === Formatting Time! === //
-            
+
             // Special case: remove the last '*' after '/**'
             if ( lines[0].trim() === ignore_line_prefix ) {
                 lines.shift();
             }
-            
+
             // First dedent pass
             lib.dedent_lines(lines);
-            
+
             // If all the lines start with asterisks, remove
             let allofem = true;
-            for ( let i=0 ; i < lines.length ; i++ ) {
+            for ( let i = 0 ; i < lines.length ; i++ ) {
                 if ( lines[i] === '' ) continue;
                 if ( ! lines[i].startsWith(ignore_line_prefix) ) {
                     allofem = false;
-                    break
+                    break;
                 }
             }
-            
+
             if ( allofem ) {
-                for ( let i=0 ; i < lines.length ; i++ ) {
+                for ( let i = 0 ; i < lines.length ; i++ ) {
                     if ( lines[i] === '' ) continue;
                     lines[i] = lines[i].slice(ignore_line_prefix.length);
                 }
-                
+
                 // Second dedent pass
                 lib.dedent_lines(lines);
             }
-            
+
             return { lines };
-        }
+        },
     };
 };
-
 
 /**
 * Creates a writer for line-style comments with a specified prefix
@@ -209,20 +207,19 @@ const LinesCommentWriter = ({ prefix }) => {
     return {
         write: (lines) => {
             lib.dedent_lines(lines);
-            for ( let i=0 ; i < lines.length ; i++ ) {
+            for ( let i = 0 ; i < lines.length ; i++ ) {
                 lines[i] = prefix + lines[i];
             }
-            return lines.join('\n') + '\n';
-        }
+            return `${lines.join('\n') }\n`;
+        },
     };
 };
-
 
 /**
 * Creates a block comment writer with specified start/end markers and prefix
 * @param {Object} options - Configuration options
 * @param {string} options.start - Comment start marker (e.g. "/*")
-* @param {string} options.end - Comment end marker (e.g. "* /") 
+* @param {string} options.end - Comment end marker (e.g. "* /")
 * @param {string} options.prefix - Line prefix within comment (e.g. " * ")
 * @returns {Object} Block comment writer object
 */
@@ -230,21 +227,20 @@ const BlockCommentWriter = ({ start, end, prefix }) => {
     return {
         write: (lines) => {
             lib.dedent_lines(lines);
-            for ( let i=0 ; i < lines.length ; i++ ) {
+            for ( let i = 0 ; i < lines.length ; i++ ) {
                 lines[i] = prefix + lines[i];
             }
-            let s = start + '\n';
-            s += lines.join('\n') + '\n';
-            s += end + '\n';
+            let s = `${start }\n`;
+            s += `${lines.join('\n') }\n`;
+            s += `${end }\n`;
             return s;
-        }
+        },
     };
 };
 
-
 /**
 * Creates a new CommentParser instance for parsing and handling source code comments
-* 
+*
 * @returns {Object} An object with methods:
 *   - supports: Checks if a file type is supported
 *   - extract_top_comments: Extracts comments from source code
@@ -282,20 +278,19 @@ const CommentParser = () => {
                     ],
                     writers: {
                         lines: ['lines', {
-                            prefix: '// '
+                            prefix: '// ',
                         }],
                         block: ['block', {
                             start: '/*',
                             end: ' */',
                             prefix: ' * ',
-                        }]
+                        }],
                     },
-                }
+                },
             },
-        }
-        
+        },
+
     };
-    
 
     /**
     * Gets the language configuration for a given filename by extracting and validating its extension
@@ -307,32 +302,31 @@ const CommentParser = () => {
         const { language } = (({ filename }) => {
             const { language_id } = (({ filename }) => {
                 const { extension } = (({ filename }) => {
-                    const components = ('' + filename).split('.');
+                    const components = (`${ filename}`).split('.');
                     const extension = components[components.length - 1];
                     return { extension };
                 })({ filename });
-                
+
                 const language_id = registry_.data.extensions[extension];
-                
+
                 if ( ! language_id ) {
-                    throw new Error(`unrecognized language id: ` +
-                        language_id);
+                    throw new Error(`unrecognized language id: ${
+                        language_id}`);
                 }
                 return { language_id };
             })({ filename });
-            
+
             const language = registry_.data.languages[language_id];
             return { language };
         })({ filename });
 
         if ( ! language ) {
             // TODO: use strutil quot here
-            throw new Error(`unrecognized language: ${language}`)
+            throw new Error(`unrecognized language: ${language}`);
         }
-        
+
         return { language };
-    }
-    
+    };
 
     /**
     * Checks if a given filename is supported by the comment parser
@@ -348,19 +342,19 @@ const CommentParser = () => {
         }
         return true;
     };
-    
+
     const extract_top_comments = async ({ filename, source }) => {
         const { language } = get_language_by_filename({ filename });
-        
+
         // TODO: registry has `data` and `object`...
         //       ... maybe add `virt` (virtual), which will
         //       behave in the way the above code is written.
 
         const inst_ = spec => registry_.object.parsers[spec[0]](spec[1]);
-        
+
         let ss = StringStream(source);
         const results = [];
-        for (;;) {
+        for ( ;; ) {
             let comment;
             for ( let parser of language.parsers ) {
                 const parser_name = parser[0];
@@ -381,10 +375,9 @@ const CommentParser = () => {
             if ( ! comment ) break;
             results.push(comment);
         }
-        
+
         return results;
-    }
-    
+    };
 
     /**
     * Outputs a comment in the specified style for a given filename and text
@@ -396,15 +389,15 @@ const CommentParser = () => {
     */
     const output_comment = ({ filename, style, text }) => {
         const { language } = get_language_by_filename({ filename });
-        
+
         const inst_ = spec => registry_.object.writers[spec[0]](spec[1]);
         let writer = language.writers[style];
         writer = inst_(writer);
         const lines = text.split('\n');
         const s = writer.write(lines);
         return s;
-    }
-    
+    };
+
     return {
         supports,
         extract_top_comments,

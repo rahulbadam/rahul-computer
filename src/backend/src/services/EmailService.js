@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -34,10 +34,10 @@ const TEMPLATES = {
         html: `
 <p>Hi there,</p>
 <p>
-Exciting news! <a href="https://puter.com/app/{{app_name}}">{{app_title}}</a> is now approved and live on <a href="https://puter.com/app/app-center" target="_blank">Puter App Center</a>. It's now ready for users worldwide to discover and enjoy.
+Exciting news! <a href="https://rahulbadam.github.io/app/{{app_name}}">{{app_title}}</a> is now approved and live on <a href="https://rahulbadam.github.io/app/app-center" target="_blank">Puter App Center</a>. It's now ready for users worldwide to discover and enjoy.
 </p>
 <p>
-<strong>Next Step</strong>: As your app begins to gain traction with more users, we will conduct periodic reviews to assess its performance and user engagement. Once your app meets our criteria, we'll invite you to our Incentive Program. This exclusive program will allow you to earn revenue each time users open your app. So, keep an eye out for updates and stay tuned for this exciting opportunity! Make sure to share your app with your fans, friends and family to help it gain traction: <a href="https://puter.com/app/{{app_name}}">https://puter.com/app/{{app_name}}</a>
+<strong>Next Step</strong>: As your app begins to gain traction with more users, we will conduct periodic reviews to assess its performance and user engagement. Once your app meets our criteria, we'll invite you to our Incentive Program. This exclusive program will allow you to earn revenue each time users open your app. So, keep an eye out for updates and stay tuned for this exciting opportunity! Make sure to share your app with your fans, friends and family to help it gain traction: <a href="https://rahulbadam.github.io/app/{{app_name}}">https://rahulbadam.github.io/app/{{app_name}}</a>
 </p>
 
 <p>Best,<br />
@@ -50,7 +50,7 @@ The Puter Team
         html: `
 <p>Hi{{#if owner_username}} {{owner_username}}{{/if}},</p>
 <p>
-Thanks for submitting <a href="https://puter.com/app/{{app_name}}">{{app_title}}</a> for the Puter App Center. We reviewed your listing and have rejected it for the following reason:
+Thanks for submitting <a href="https://rahulbadam.github.io/app/{{app_name}}">{{app_title}}</a> for the Puter App Center. We reviewed your listing and have rejected it for the following reason:
 </p>
 <blockquote>{{reason}}</blockquote>
 <p>
@@ -66,7 +66,7 @@ The Puter Team
         html: `
 <p>Hi{{#if owner_username}} {{owner_username}}{{/if}},</p>
 <p>
-Please update <a href="https://apps.puter.com/apps/{{app_name}}">{{app_title}}</a>.
+Please update <a href="https://rahulbadam.github.io/apps/apps/{{app_name}}">{{app_title}}</a>.
 </p>
 <p><strong>Requested updates:</strong></p>
 <blockquote>{{message}}</blockquote>

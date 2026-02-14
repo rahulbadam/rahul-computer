@@ -1,7 +1,7 @@
 // METADATA // {"def":"core.util.strutil","ai-params":{"service":"claude"},"":{"service":"claude"}}
 
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  */
 
 /*eslint no-control-regex: 'off'*/

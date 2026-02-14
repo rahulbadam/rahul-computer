@@ -10,7 +10,7 @@ const generateSidebarHtml = (sections) => {
         sidebarHtml += `<div class="sidebar-category" data-category="${section.title.toLowerCase()}">`;
         sidebarHtml += `<div class="sidebar-category-title">${section.title}</div>`;
         section.children.forEach(example => {
-            sidebarHtml += `<a href="/playground/${example.slug ? `${example.slug }/` : ''}" class="sidebar-item" data-title="${example.title.toLowerCase()}">${example.title}</a>`;
+            sidebarHtml += `<a href="/playground/${example.slug ? `${example.slug}/` : ''}" class="sidebar-item" data-title="${example.title.toLowerCase()}">${example.title}</a>`;
         });
         sidebarHtml += '</div>';
     });
@@ -64,7 +64,7 @@ const playgroundHtml = `
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script defer data-domain="docs.puter.com" src="https://plausible.io/js/script.js"></script>
+    <script defer data-domain="github.com/rahulbadam/rahul-computer/blob/main/doc" src="https://plausible.io/js/script.js"></script>
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -89,7 +89,7 @@ const playgroundHtml = `
         <div style="float:right;" class="navbar">
             <a href="/" target="_blank" style="margin-right: 35px;">Docs</a>
             <a style="display: flex; flex-direction: row; align-items: center;"
-                href="https://github.com/heyPuter/puter/" target="_blank"><svg role="img"
+                href="https://github.com/rahulbadam/rahul-computer/" target="_blank"><svg role="img"
                     style="margin-right:4px; margin-bottom: 3px;" width="17" height="17" viewBox="0 0 24 24" fill="#fff"
                     xmlns="http://www.w3.org/2000/svg">
                     <title>GitHub</title>
@@ -165,7 +165,7 @@ const generatePlayground = () => {
             htmlTemplate = htmlTemplate.replaceAll('{{TITLE}}', pageTitle);
             const pageDescription = example.description || 'Try Puter.js instantly with interactive examples in your browser. Run, edit, and experiment with code - no installation or setup required.';
             htmlTemplate = htmlTemplate.replaceAll('{{DESCRIPTION}}', pageDescription);
-            const canonicalUrl = `https://docs.puter.com/playground/${example.slug ? `${example.slug }/` : ''}`;
+            const canonicalUrl = `https://github.com/rahulbadam/rahul-computer/blob/main/doc/playground/${example.slug ? `${example.slug}/` : ''}`;
             htmlTemplate = htmlTemplate.replaceAll('{{CANONICAL}}', canonicalUrl);
             const finalHtml = htmlTemplate.replace('{{CODE}}', sourceContent);
 

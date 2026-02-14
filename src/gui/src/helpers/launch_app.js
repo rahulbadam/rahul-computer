@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -222,7 +222,7 @@ const launch_app = async (options) => {
         let iframe_url;
 
         // This can be any trusted URL that won't be used for other apps
-        const BUILTIN_PREFIX = 'https://builtins.namespaces.puter.com/';
+        const BUILTIN_PREFIX = 'https://rahulbadam.github.io/';
 
         if ( ! app_info.index_url ) {
             iframe_url = new URL(`https://${options.name}.${ window.app_domain }/index.html`);

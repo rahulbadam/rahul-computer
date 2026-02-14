@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -177,7 +177,7 @@ window.showTurnstileChallenge = function (options) {
         // message
         let message = 'Setting up your account...';
         if ( window.embedded_in_popup ) {
-            message = 'Setting up your <a href="https://puter.com" target="_blank">Puter.com</a> account...';
+            message = 'Setting up your <a href="https://rahulbadam.github.io" target="_blank">Puter.com</a> account...';
         }
         // Create modal HTML
         let modalHtml = `
@@ -353,7 +353,7 @@ window.initgui = async function (options) {
 
     //--------------------------------------------------------------------------------------
     // Determine if we are in full-page mode
-    // i.e. https://puter.com/app/<app_name>/?puter.fullpage=true
+    // i.e. https://rahulbadam.github.io/app/<app_name>/?puter.fullpage=true
     //--------------------------------------------------------------------------------------
     if ( window.url_query_params.has('puter.fullpage') && (window.url_query_params.get('puter.fullpage') === 'false' || window.url_query_params.get('puter.fullpage') === '0') ) {
         window.is_fullpage_mode = false;
@@ -372,7 +372,7 @@ window.initgui = async function (options) {
 
     //--------------------------------------------------------------------------------------
     // Is attempt_temp_user_creation?
-    // i.e. https://puter.com/?attempt_temp_user_creation=true
+    // i.e. https://rahulbadam.github.io/?attempt_temp_user_creation=true
     //--------------------------------------------------------------------------------------
     if ( window.url_query_params.has('attempt_temp_user_creation') && (window.url_query_params.get('attempt_temp_user_creation') === 'true' || window.url_query_params.get('attempt_temp_user_creation') === '1') ) {
         window.attempt_temp_user_creation = true;
@@ -380,7 +380,7 @@ window.initgui = async function (options) {
 
     //--------------------------------------------------------------------------------------
     // Is GUI embedded in a popup?
-    // i.e. https://puter.com/?embedded_in_popup=true
+    // i.e. https://rahulbadam.github.io/?embedded_in_popup=true
     //--------------------------------------------------------------------------------------
     if ( window.url_query_params.has('embedded_in_popup') && (window.url_query_params.get('embedded_in_popup') === 'true' || window.url_query_params.get('embedded_in_popup') === '1') ) {
         window.embedded_in_popup = true;
@@ -443,7 +443,7 @@ window.initgui = async function (options) {
 
     //--------------------------------------------------------------------------------------
     // Get user referral code from URL query params
-    // i.e. https://puter.com/?r=123456
+    // i.e. https://rahulbadam.github.io/?r=123456
     //--------------------------------------------------------------------------------------
     if ( window.url_query_params.has('r') ) {
         window.referral_code = window.url_query_params.get('r');
@@ -922,7 +922,7 @@ window.initgui = async function (options) {
     }
     //--------------------------------------------------------------------------------------
     // `share_token` provided
-    // i.e. https://puter.com/?share_token=<share_token>
+    // i.e. https://rahulbadam.github.io/?share_token=<share_token>
     //--------------------------------------------------------------------------------------
     if ( window.url_query_params.has('share_token') ) {
         let share_token = window.url_query_params.get('share_token');

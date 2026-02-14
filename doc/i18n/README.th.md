@@ -42,7 +42,7 @@
 ### 💻 การพัฒนาภายในเครื่อง
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -107,7 +107,7 @@ docker compose up
 
 ติดต่อกับผู้ดูแลระบบและชุมชนผ่านช่องทางเหล่านี้:
 
-- พบข้อผิดพลาดหรือขอฟีเจอร์ใหม่? กรุณา [เปิดปัญหา](https://github.com/HeyPuter/puter/issues/new/choose).
+- พบข้อผิดพลาดหรือขอฟีเจอร์ใหม่? กรุณา [เปิดปัญหา](https://github.com/rahulbadam/rahul-computer/issues/new/choose).
 - ดิสคอร์ด: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - X (ทวิตเตอร์): [x.com/HeyPuter](https://x.com/HeyPuter)
 - เรดดิท: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -122,6 +122,6 @@ docker compose up
 
 ##  ลิขสิทธิ์
 
-ที่เก็บข้อมูลนี้ รวมถึงเนื้อหาทั้งหมด, โครงการย่อย, โมดูล, และส่วนประกอบต่างๆ ได้รับใบอนุญาตภายใต้ [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt)  เว้นแต่จะมีการระบุไว้เป็นอย่างอื่นอย่างชัดเจน ไลบรารีจากบุคคลที่สามที่รวมอยู่ในที่เก็บข้อมูลนี้อาจอยู่ภายใต้ใบอนุญาตของตนเอง
+ที่เก็บข้อมูลนี้ รวมถึงเนื้อหาทั้งหมด, โครงการย่อย, โมดูล, และส่วนประกอบต่างๆ ได้รับใบอนุญาตภายใต้ [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt)  เว้นแต่จะมีการระบุไว้เป็นอย่างอื่นอย่างชัดเจน ไลบรารีจากบุคคลที่สามที่รวมอยู่ในที่เก็บข้อมูลนี้อาจอยู่ภายใต้ใบอนุญาตของตนเอง
 
 <br/>

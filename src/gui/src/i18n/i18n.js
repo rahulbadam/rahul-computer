@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -22,9 +22,9 @@ import translations from './translations/translations.js';
 window.listSupportedLanguages = () => Object.keys(translations).map(lang => translations[lang]);
 
 const variables = {
-    docs: 'https://docs.puter.com/',
-    terms: 'https://puter.com/terms',
-    privacy: 'https://puter.com/privacy',
+    docs: 'https://github.com/rahulbadam/rahul-computer/blob/main/doc/',
+    terms: 'https://rahulbadam.github.io/terms',
+    privacy: 'https://rahulbadam.github.io/privacy',
 };
 
 function ReplacePlaceholders (str, arg_variables = {}) {

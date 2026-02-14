@@ -1,10 +1,10 @@
 {
   "name": "puter.com",
   "version": "2.5.1",
-  "author": "Puter Technologies Inc.",
+  "author": "Rahul Badam (forked from Puter Technologies Inc.)",
   "license": "AGPL-3.0-only",
   "description": "Desktop environment in the browser!",
-  "homepage": "https://puter.com",
+  "homepage": "https://github.com/rahulbadam/rahul-computer",
   "type": "module",
   "main": "exports.js",
   "directories": {

@@ -1,7 +1,7 @@
-const APIError = require("../api/APIError");
+const APIError = require('../api/APIError');
 
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -31,7 +31,7 @@ const valid_file_size = v => {
 
 const validate_fields = (fields, values) => {
     // First, check for missing fields (undefined)
-    const missing_fields = Object.keys(fields).filter(field => ! fields[field].optional && values[field] === undefined);
+    const missing_fields = Object.keys(fields).filter(field => !fields[field].optional && values[field] === undefined);
     if ( missing_fields.length > 0 ) {
         throw APIError.create('fields_missing', null, { keys: missing_fields });
     }
@@ -54,7 +54,7 @@ const validate_fields = (fields, values) => {
             })),
         });
     }
-}
+};
 
 module.exports = {
     valid_file_size,

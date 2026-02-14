@@ -41,7 +41,7 @@
 ### 💻 உள்ளூர் வளர்ச்சி
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -104,7 +104,7 @@ docker compose up
 
 இந்த சேனல்கள் மூலம் பராமரிப்பாளர்கள் மற்றும் சமூகத்துடன் சமூக இணைப்பாளர்:
 
-- பிழை அறிக்கை அல்லது மாற்றுதல் கோரிக்கை? தயவுசெய்து [சிக்கலைத் திறக்கவும்](https://github.com/HeyPuter/puter/issues/new/choose).
+- பிழை அறிக்கை அல்லது மாற்றுதல் கோரிக்கை? தயவுசெய்து [சிக்கலைத் திறக்கவும்](https://github.com/rahulbadam/rahul-computer/issues/new/choose).
 - கருத்து வேறுபாடு: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - X (Twitter):  [x.com/HeyPuter](https://x.com/HeyPuter)
 - Reddit: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -118,6 +118,6 @@ docker compose up
 
 ## உரிமம்
 
-இந்தக் களஞ்சியமானது, அதன் அனைத்து உள்ளடக்கங்கள், துணைத் திட்டங்கள், தொகுதிகள் மற்றும் கூறுகள் உட்பட, வெளிப்படையாகக் கூறப்படாவிட்டால், [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt) இன் கீழ் உரிமம் பெற்றுள்ளது. . இந்தக் களஞ்சியத்தில் சேர்க்கப்பட்டுள்ள மூன்றாம் தரப்பு நூலகங்கள் அவற்றின் சொந்த உரிமங்களுக்கு உட்பட்டதாக இருக்கும்.
+இந்தக் களஞ்சியமானது, அதன் அனைத்து உள்ளடக்கங்கள், துணைத் திட்டங்கள், தொகுதிகள் மற்றும் கூறுகள் உட்பட, வெளிப்படையாகக் கூறப்படாவிட்டால், [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt) இன் கீழ் உரிமம் பெற்றுள்ளது. . இந்தக் களஞ்சியத்தில் சேர்க்கப்பட்டுள்ள மூன்றாம் தரப்பு நூலகங்கள் அவற்றின் சொந்த உரிமங்களுக்கு உட்பட்டதாக இருக்கும்.
 
 <br/>

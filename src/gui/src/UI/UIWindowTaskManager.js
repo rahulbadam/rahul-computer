@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -132,7 +132,7 @@ const generate_task_rows = (items, { indent_level, is_last_item_stack }) => {
         if ( children ) {
             rows_html += generate_task_rows(children, {
                 indent_level: indent_level + 1,
-                is_last_item_stack: [ ...is_last_item_stack, is_last_item ],
+                is_last_item_stack: [...is_last_item_stack, is_last_item],
             });
         }
     }

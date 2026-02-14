@@ -6,6 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Puter Technologies Inc.",
+  "author": "Rahul Badam (forked from Puter Technologies Inc.)",
   "license": "AGPL-3.0-only"
 }

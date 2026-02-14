@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -26,7 +26,7 @@ window.puter_gui_enabled = true;
  * It also handles loading different resources depending on the environment (development or production).
  *
  * @param {Object} options - Configuration options to initialize the GUI.
- * @param {string} [options.gui_origin='https://puter.com'] - The origin URL for the GUI.
+ * @param {string} [options.gui_origin='https://rahulbadam.github.io'] - The origin URL for the GUI.
  * @param {string} [options.api_origin='https://api.puter.com'] - The origin URL for the API.
  * @param {number} [options.max_item_name_length=500] - Maximum allowed length for an item name.
  * @param {boolean} [options.require_email_verification_to_publish_website=true] - Flag to decide whether email verification is required to publish a website.
@@ -49,7 +49,7 @@ window.gui = async (options) => {
     options = options ?? {};
     // app_origin is deprecated, use gui_origin instead
     window.gui_params = options;
-    window.gui_origin = options.gui_origin ?? options.app_origin ?? 'https://puter.com';
+    window.gui_origin = options.gui_origin ?? options.app_origin ?? 'https://rahulbadam.github.io';
     window.app_domain = options.app_domain ?? new URL(window.gui_origin).hostname;
     window.hosting_domain = options.hosting_domain ?? 'puter.site';
     window.api_origin = options.api_origin ?? 'https://api.puter.com';

@@ -1,0 +1,10 @@
+const { use, def } = globalThis.__puter_extension_globals__.useapi;
+const { use: puter } = globalThis.__puter_extension_globals__.useapi;
+const extension = globalThis.__puter_extension_globals__.extensionObjectRegistry['a9b0694b-a3dd-41a1-99b6-095b10db3726'];
+const console = extension.console;
+const runtime = extension.runtime;
+const config = extension.config;
+const registry = extension.registry;
+const register = registry.register;
+const global_config = globalThis.__puter_extension_globals__.global_config;
+import './routes.js';

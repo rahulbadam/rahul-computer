@@ -142,7 +142,7 @@ module.exports = {
 
 - The working directory is stored in `t.cwd`.
 - All filesystem operations are performed relative to the working directory, if the given path is not absolute. (e.g., `t.mkdir('foo')`, `t.cd('foo')`, `t.stat('foo')`, etc.)
-- Tests will be run under all mountpoints. The default working directory for a mountpoint is `${mountpoint.path}/{username}/api_test`. (This is subject to change in the future, the reason we include `admin` in the path is to ensure the test user `admin` has write access, see [Permission Documentation](https://github.com/HeyPuter/puter/blob/3290440f4bf7a263f37bc5233565f8fec146f17b/src/backend/doc/A-and-A/permission.md#permission-options) for details.)
+- Tests will be run under all mountpoints. The default working directory for a mountpoint is `${mountpoint.path}/{username}/api_test`. (This is subject to change in the future, the reason we include `admin` in the path is to ensure the test user `admin` has write access, see [Permission Documentation](https://github.com/rahulbadam/rahul-computer/blob/3290440f4bf7a263f37bc5233565f8fec146f17b/src/backend/doc/A-and-A/permission.md#permission-options) for details.)
 - The working directory is reset at the beginning of each test suite, since a test suite usually doesn't want to be affected by other test suites.
 - The working directory will be inherited from the cases in the same test suite, since a leaf case might want to share the context with its parent/sibling cases.
 

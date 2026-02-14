@@ -44,7 +44,7 @@ Puter 是一个先进的开源互联网操作系统，设计为功能丰富、�
 ### 💻 本地开发
 
 ```bash
-git clone https://github.com/HeyPuter/puter
+git clone https://github.com/rahulbadam/rahul-computer
 cd puter
 npm install
 npm start
@@ -118,7 +118,7 @@ Puter 可以作为托管服务使用，访问 [**puter.com**](https://puter.com)
 
 通过以下渠道与维护者和社区联系：
 
-- 有 Bug 报告或功能请求？请 [提交问题](https://github.com/HeyPuter/puter/issues/new/choose)。
+- 有 Bug 报告或功能请求？请 [提交问题](https://github.com/rahulbadam/rahul-computer/issues/new/choose)。
 - Discord: [discord.com/invite/PQcx7Teh8u](https://discord.com/invite/PQcx7Teh8u)
 - X (Twitter): [x.com/HeyPuter](https://x.com/HeyPuter)
 - Reddit: [reddit.com/r/puter/](https://www.reddit.com/r/puter/)
@@ -133,6 +133,6 @@ Puter 可以作为托管服务使用，访问 [**puter.com**](https://puter.com)
 
 ## 许可证
 
-本仓库，包括其所有内容、子项目、模块和组件，除非另有明确说明，否则均遵循 [AGPL-3.0](https://github.com/HeyPuter/puter/blob/main/LICENSE.txt) 许可证。 本仓库中包含的第三方库可能受其各自的许可证约束。
+本仓库，包括其所有内容、子项目、模块和组件，除非另有明确说明，否则均遵循 [AGPL-3.0](https://github.com/rahulbadam/rahul-computer/blob/main/LICENSE.txt) 许可证。 本仓库中包含的第三方库可能受其各自的许可证约束。
 
 <br/>

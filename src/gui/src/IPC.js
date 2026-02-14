@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -1688,7 +1688,7 @@ const ipc_listener = async (event, handled) => {
         let target_path;
         let create_missing_ancestors = false;
 
-        console.warn(`The method ${event.data.msg} is deprecated - see docs.puter.com for more information.`);
+        console.warn(`The method ${event.data.msg} is deprecated - see github.com/rahulbadam/rahul-computer/blob/main/doc for more information.`);
         event.data.filename = path.normalize(event.data.filename)
             .replace(/(\.+\/|\.+\\)/g, '');
 

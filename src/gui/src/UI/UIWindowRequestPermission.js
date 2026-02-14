@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -145,7 +145,7 @@ async function setup_window_events (el_window, options, resolve) {
 
 /**
  * Generates user-friendly description of permission string in HTML format.
- * 
+ *
  * @param {string} permission - The permission string to describe
  * @returns {string} The user-friendly description of the permission in HTML format
  */
@@ -231,7 +231,7 @@ async function get_permission_description (permission) {
         }
     }
 
-    return null
+    return null;
 }
 
 /**

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-present Puter Technologies Inc.
+ * Copyright (C) 2024-present Rahul Badam (forked from Puter Technologies Inc.)
  *
  * This file is part of Puter.
  *
@@ -29,7 +29,7 @@ module.exports = eggspress('/query/app', {
     auth: true,
     verified: true,
     fs: true,
-    mw: [ express.json({ extended: true }) ],
+    mw: [express.json({ extended: true })],
     allowedMethods: ['POST'],
 }, async (req, res, _next) => {
     const results = [];
