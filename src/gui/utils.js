@@ -242,9 +242,10 @@ function generateProdHtml (env) {
     h += '</head>';
     h += '<body>';
     h += '<script>window.puter_gui_enabled = true;</script>';
-    h += '<script src="/gui.js"></script>';
-    h += '<script type="text/javascript">';
-    h += 'window.addEventListener("load", function() { gui(); });';
+    h += '<script src="/bundle.min.js" defer></script>';
+    h += '<script src="/gui.js" defer></script>';
+    h += '<script type="text/javascript" defer>';
+    h += 'document.addEventListener("DOMContentLoaded", function() { gui(); });';
     h += '</script>';
     h += '</body>';
     h += '</html>';
