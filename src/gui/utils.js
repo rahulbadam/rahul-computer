@@ -248,7 +248,7 @@ function generateProdHtml (env) {
     h += 'window.onload = function() {';
     h += '  gui({';
     h += '    api_origin: "https://api.puter.com",';
-    h += '    gui_origin: "https://rahulbadam.github.io",';
+    h += '    gui_origin: "https://puter.com",';
     h += '    title: "Puter",';
     h += '    max_item_name_length: 150,';
     h += '    require_email_verification_to_publish_website: false,';
