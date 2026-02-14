@@ -61,6 +61,20 @@ logger.info('start -> blocking initialization');
     })();
 })(globalThis);
 
+// A global promise for service script API that will be resolved by initgui.js
+(scope => {
+    scope.service_script_api_promise = (() => {
+        let resolve, reject;
+        const promise = new Promise((res, rej) => {
+            resolve = res;
+            reject = rej;
+        });
+        promise.resolve = resolve;
+        promise.reject = reject;
+        return promise;
+    })();
+})(globalThis);
+
 // This is where `use()` and `def()` are defined.
 //
 // A global registry for class definitions. This allows us to expose
