@@ -71,15 +71,13 @@ async function build (options) {
             let minified_code = await uglifyjs.minify(fs.readFileSync(file).toString(), { mangle: false });
             if ( minified_code && minified_code.code ) {
                 js += minified_code.code;
-                if ( options?.verbose )
-                {
+                if ( options?.verbose ) {
                     console.log('minified: ', file);
                 }
             }
         } else {
             js += fs.readFileSync(file);
-            if ( options?.verbose )
-            {
+            if ( options?.verbose ) {
                 console.log('skipped minification: ', file);
             }
         }
@@ -93,21 +91,18 @@ async function build (options) {
     let icons = 'window.icons = [];\n\n\n';
     fs.readdirSync(path.join(__dirname, 'src/icons')).forEach(file => {
         // skip dotfiles
-        if ( file.startsWith('.') )
-        {
+        if ( file.startsWith('.') ) {
             return;
         }
         // load image
-        let buff = new Buffer.from(fs.readFileSync(`${path.join(__dirname, 'src/icons') }/${ file}`));
+        let buff = new Buffer.from(fs.readFileSync(`${path.join(__dirname, 'src/icons')}/${file}`));
         // convert to base64
         let base64data = buff.toString('base64');
         // add to `window.icons`
-        if ( file.endsWith('.png') )
-        {
+        if ( file.endsWith('.png') ) {
             icons += `window.icons['${file}'] = "data:image/png;base64,${base64data}";\n`;
         }
-        else if ( file.endsWith('.svg') )
-        {
+        else if ( file.endsWith('.svg') ) {
             icons += `window.icons['${file}'] = "data:image/svg+xml;base64,${base64data}";\n`;
         }
     });
@@ -124,8 +119,7 @@ async function build (options) {
             css += minified_css.styles;
         }
         // otherwise, just concatenate the file
-        else
-        {
+        else {
             css += fs.readFileSync(path.join(__dirname, 'src', css_paths[i]));
         }
 
@@ -169,7 +163,7 @@ async function build (options) {
     // Copy index.js to dist/gui.js
     // Prepend `window.gui_env="prod";` to `./dist/gui.js`
     fs.writeFileSync(path.join(__dirname, 'dist', 'gui.js'),
-                    `window.gui_env="${PUTER_ENV}"; \n\n${ fs.readFileSync(path.join(__dirname, 'src', 'index.js'))}`);
+        `window.gui_env="${PUTER_ENV}"; \n\n${fs.readFileSync(path.join(__dirname, 'src', 'index.js'))}`);
 
     const copy_these = [
         'images',
@@ -197,6 +191,65 @@ async function build (options) {
     for ( const to_copy of copy_these ) {
         recursive_copy(path.join(__dirname, 'src', to_copy), path.join(__dirname, 'dist', to_copy));
     }
+
+    // Generate index.html for production
+    generateProdHtml(PUTER_ENV);
+}
+
+/**
+ * Generates the production HTML file for the GUI.
+ * @param {string} env - The environment (should be "prod")
+ */
+function generateProdHtml (env) {
+    let h = '';
+    h += '<!DOCTYPE html>';
+    h += '<html lang="en">';
+    h += '<head>';
+    h += '<meta charset="UTF-8">';
+    h += '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
+    h += '<title>Puter - Desktop Environment in the Browser</title>';
+    h += '<meta name="description" content="Puter is a privacy-first personal cloud that houses all your files, apps, and games in one private and secure place, accessible from anywhere at any time.">';
+    h += '<meta name="author" content="Puter">';
+    h += '<meta name="facebook-domain-verification" content="e29w3hjbnnnypf4kzk2cewcdaxym1y" />';
+    h += '<link rel="canonical" href="/">';
+    h += '<meta property="og:type" content="website">';
+    h += '<meta property="og:title" content="Puter">';
+    h += '<meta property="og:description" content="Puter is a privacy-first personal cloud that houses all your files, apps, and games in one private and secure place, accessible from anywhere at any time.">';
+    h += '<meta property="og:image" content="">';
+    h += '<meta name="twitter:card" content="summary_large_image">';
+    h += '<meta name="twitter:title" content="Puter">';
+    h += '<meta name="twitter:description" content="Puter is a privacy-first personal cloud that houses all your files, apps, and games in one private and secure place, accessible from anywhere at any time.">';
+    h += '<meta name="twitter:image" content="">';
+    h += '<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">';
+    h += '<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">';
+    h += '<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">';
+    h += '<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">';
+    h += '<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">';
+    h += '<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">';
+    h += '<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">';
+    h += '<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">';
+    h += '<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">';
+    h += '<link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">';
+    h += '<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">';
+    h += '<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">';
+    h += '<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">';
+    h += '<link rel="manifest" href="/manifest.json">';
+    h += '<meta name="msapplication-TileColor" content="#ffffff">';
+    h += '<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">';
+    h += '<meta name="theme-color" content="#ffffff">';
+    h += '<link rel="preload" as="image" href="./images/wallpaper.webp">';
+    h += '<link rel="stylesheet" href="/bundle.min.css">';
+    h += '</head>';
+    h += '<body>';
+    h += '<script>window.puter_gui_enabled = true;</script>';
+    h += '<script src="/gui.js"></script>';
+    h += '<script type="text/javascript">';
+    h += 'window.addEventListener("load", function() { gui(); });';
+    h += '</script>';
+    h += '</body>';
+    h += '</html>';
+
+    fs.writeFileSync(path.join(__dirname, 'dist', 'index.html'), h);
 }
 
 /**
@@ -315,21 +368,18 @@ function generateDevHtml (options) {
         h += 'window.icons = {};';
         fs.readdirSync(path.join(__dirname, 'src/icons')).forEach(file => {
             // skip dotfiles
-            if ( file.startsWith('.') )
-            {
+            if ( file.startsWith('.') ) {
                 return;
             }
             // load image
-            let buff = new Buffer.from(fs.readFileSync(`${path.join(__dirname, 'src/icons') }/${ file}`));
+            let buff = new Buffer.from(fs.readFileSync(`${path.join(__dirname, 'src/icons')}/${file}`));
             // convert to base64
             let base64data = buff.toString('base64');
             // add to `window.icons`
-            if ( file.endsWith('.png') )
-            {
+            if ( file.endsWith('.png') ) {
                 h += `window.icons['${file}'] = "data:image/png;base64,${base64data}";\n`;
             }
-            else if ( file.endsWith('.svg') )
-            {
+            else if ( file.endsWith('.svg') ) {
                 h += `window.icons['${file}'] = "data:image/svg+xml;base64,${base64data}";\n`;
             }
         });
@@ -363,7 +413,7 @@ function generateDevHtml (options) {
 
     </html>`;
 
-    console.log(`/index.js: ${ (Date.now() - start_t) / 1000}`);
+    console.log(`/index.js: ${(Date.now() - start_t) / 1000}`);
     return h;
 }
 
